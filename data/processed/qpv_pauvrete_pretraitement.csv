@@ -1,0 +1,1249 @@
+code,taux_pauvrete_pre,nom_qp,insee_com,lib_com
+QP001001,37.43333333333333,Grande Reyssouze Terre Des Fleurs,1053,Bourg-en-Bresse
+QP001002,46.0,Croix Blanche,1053,Bourg-en-Bresse
+QP001005,41.266666666666666,Les Courbes De L'Albarine,1004,Ambérieu-en-Bugey
+QP001006,40.1,La Plaine - La Forge,1283,Oyonnax
+QP001007,38.666666666666664,Pré Des Saules,1031,Bellignat
+QP001008,52.333333333333336,Brillat - Savarin,1034,Belley
+QP001009,38.699999999999996,Maladière,1262,Montluel
+QP002001,47.333333333333336,Europe,02571; 02691,Omissy; Saint-Quentin
+QP002002,38.666666666666664,Faubourg D'Isle,2691,Saint-Quentin
+QP002003,46.03333333333333,Neuville,2691,Saint-Quentin
+QP002004,54.666666666666664,Vermandois,2691,Saint-Quentin
+QP002005,48.9,Champ Roland Et Bords De L'Oise,2381,Hirson
+QP002006,39.6,Gare Et Verrière,2381,Hirson
+QP002007,46.76666666666667,Quartier De L'Artilleur,2304,La Fère
+QP002008,51.333333333333336,Roosevelt Rebequet,2738,Tergnier
+QP002009,56.86666666666667,Quartier De La Résidence,2173,Chauny
+QP002010,48.03333333333333,Montreuil,2408,Laon
+QP002011,59.4,Champagne Moulin - Roux,2408,Laon
+QP002012,43.666666666666664,Saint-Crépin Ouest,2722,Soissons
+QP002013,54.666666666666664,Presles,2722,Soissons
+QP002014,65.5,Chevreux,2722,Soissons
+QP002015,38.36666666666667,Route De Vivières,2810,Villers-Cotterêts
+QP002016,41.4,Blanchard,2168,Château-Thierry
+QP002017,46.166666666666664,Vaucrises,2168,Château-Thierry
+QP003001,38.800000000000004,Coeur D'Agglo,03095; 03310,Cusset; Vichy
+QP003002,41.43333333333334,Les Ailes,3310,Vichy
+QP003003,39.56666666666666,Moulins-Sud,3190,Moulins
+QP003004,40.76666666666667,Rive Gauche,3185,Montluçon
+QP003005,44.1,Fontbouillant,03185; 03211,Montluçon; Prémilhat
+QP003006,57.9,Bien-Assis,03101; 03185,Domérat; Montluçon
+QP004001,41.300000000000004,Centre Ville - Pigeonnier,4070,Digne-les-Bains
+QP004002,35.333333333333336,Centre Ville - Saint-Lazare,4112,Manosque
+QP004003,44.333333333333336,Arc Serrets - Plantiers - Aliziers,4112,Manosque
+QP005001,34.166666666666664,Haut - Gap,5061,Gap
+QP006001,36.06666666666667,Las Planas,6088,Nice
+QP006002,41.36666666666667,Coeur De Ville - Hauts De Vallauris,6155,Vallauris
+QP006003,31.633333333333336,Ranguin-Frayère,06029; 06030,Cannes; Le Cannet
+QP006004,30.03333333333333,Genêts - Oliviers - Saint-Pierre,06029; 06030,Cannes; Le Cannet
+QP006005,37.73333333333333,Grand Centre,6069,Grasse
+QP006006,38.06666666666667,Les Fleurs De Grasse,6069,Grasse
+QP006007,37.06666666666666,La Condamine,6054,Drap
+QP006008,29.066666666666666,Centre,6033,Carros
+QP006010,45.86666666666667,Les Moulins - Le Point Du Jour,06088; 06123,Nice; Saint-Laurent-du-Var
+QP006011,51.36666666666667,Les Sagnes,6088,Nice
+QP006012,36.7,Centre,6088,Nice
+QP006013,41.5,Paillon,6088,Nice
+QP006014,45.0,Ariane - Le Manoir,06088; 06114; 06149,Nice; Saint-André-de-la-Roche; La Trinité
+QP006016,44.666666666666664,Centre,6157,Vence
+QP007001,46.43333333333334,Le Contrat Ville Des Quartiers D'Avenir D'Aubenas,7019,Aubenas
+QP007002,36.666666666666664,Coeur De Ville,7319,Le Teil
+QP007003,45.666666666666664,Sud Avenir,7319,Le Teil
+QP007004,42.13333333333333,Les Hauts De Ville,7010,Annonay
+QP007005,43.699999999999996,Nouvel Horizon,7186,Privas
+QP008001,51.63333333333333,Manchester,8105,Charleville-Mézières
+QP008002,57.53333333333333,Ronde Couture,8105,Charleville-Mézières
+QP008003,48.6,La Houillère,8105,Charleville-Mézières
+QP008004,40.233333333333334,La Couronne,8105,Charleville-Mézières
+QP008005,47.833333333333336,Torcy Cités,8409,Sedan
+QP008006,40.699999999999996,Torcy Centre,8409,Sedan
+QP008007,49.833333333333336,Le Lac - Centre Ancien,8409,Sedan
+QP008008,44.0,Coeur De Vie,8362,Rethel
+QP009001,38.666666666666664,Coeur De Ville,9261,Saint-Girons
+QP009002,37.733333333333334,Centre Ancien,9122,Foix
+QP009003,40.5,Centre Ancien - La Gloriette,9225,Pamiers
+QP010001,43.1,Gare,10387,Troyes
+QP010002,35.36666666666667,Bords De Seine,10387,Troyes
+QP010003,48.76666666666667,Chantereigne Montvilliers Beau-Toquat,10081; 10265; 10387,La Chapelle-Saint-Luc; Les Noës-près-Troyes; Troyes
+QP010004,45.43333333333334,Debussy,10297,Pont-Sainte-Marie
+QP010005,47.86666666666667,Maugout,10333,Saint-André-les-Vergers
+QP010006,51.699999999999996,Chartreux,10060; 10343; 10387,Bréviandes; Saint-Julien-les-Villas; Troyes
+QP010007,60.63333333333333,Jules Guesde,10387,Troyes
+QP010008,56.43333333333334,Sénardes,10387,Troyes
+QP010009,51.4,Point Du Jour,10387,Troyes
+QP010010,53.43333333333334,Quartier Des Lumières - Alfred Boucher,10323,Romilly-sur-Seine
+QP011001,41.46666666666667,Quartier Aude,11206,Limoux
+QP011002,59.26666666666667,La Conte - Ozanam,11069,Carcassonne
+QP011003,64.13333333333334,Le Viguier - Saint-Jacques,11069,Carcassonne
+QP011004,40.300000000000004,Bastide Pont-Vieux,11069,Carcassonne
+QP011005,47.96666666666667,Fleming La Reille,11069,Carcassonne
+QP011006,48.199999999999996,Grazailles,11069,Carcassonne
+QP011007,49.800000000000004,Narbonne Ouest,11262,Narbonne
+QP011008,42.199999999999996,Narbonne Centre,11262,Narbonne
+QP011009,46.9,Narbonne Est,11262,Narbonne
+QP011010,43.1,Centre Ville,11203,Lézignan-Corbières
+QP012001,42.266666666666666,Quatre Saisons,12176,Onet-le-Château
+QP012002,46.86666666666667,La Bastide,12300,Villefranche-de-Rouergue
+QP013001,59.199999999999996,Florida Parc,13054,Marignane
+QP013002,29.833333333333332,Quartier Centre Ville,13014,Berre-l'Étang
+QP013003,34.56666666666666,Saint Henri,13055,Marseille
+QP013005,51.6,La Viste,13055,Marseille
+QP013006,41.9,Roquecoquille,13027,Châteaurenard
+QP013007,53.699999999999996,La Gavotte - Peyret,13106,Septèmes-les-Vallons
+QP013008,44.96666666666667,Château Saint Loup,13055,Marseille
+QP013009,41.4,La Capelette,13055,Marseille
+QP013010,49.43333333333334,Griffeuille,13004,Arles
+QP013011,48.199999999999996,Barriol,13004,Arles
+QP013012,47.23333333333333,Le Trébon,13004,Arles
+QP013013,53.0,Centre Historique - Ferrages,13108,Tarascon
+QP013014,33.2,Jas-De-Bouffan,13001,Aix-en-Provence
+QP013015,45.26666666666667,Beisson,13001,Aix-en-Provence
+QP013016,38.06666666666666,Encagnane,13001,Aix-en-Provence
+QP013017,44.300000000000004,Corsy,13001,Aix-en-Provence
+QP013018,41.13333333333333,Secteur Centre,13117,Vitrolles
+QP013019,34.36666666666667,La Frescoule,13117,Vitrolles
+QP013020,34.0,Le Charrel,13005,Aubagne
+QP013021,43.76666666666667,Mas de Pouane,13056,Martigues
+QP013022,41.6,Notre Dame Des Marins,13056,Martigues
+QP013023,33.96666666666666,Canto Perdrix,13056,Martigues
+QP013024,42.46666666666667,Les Aigues Douces,13077,Port-de-Bouc
+QP013025,33.6,Les Comtes,13077,Port-de-Bouc
+QP013027,45.4,Centre Historique,13067,Orgon
+QP013028,37.43333333333334,Quartier Béalet-Bessons-Mariélie,13014,Berre-l'Étang
+QP013029,52.166666666666664,Les Canourgues,13103,Salon-de-Provence
+QP013030,38.166666666666664,La Monaque,13103,Salon-de-Provence
+QP013031,40.63333333333333,Centre ville,13054,Marignane
+QP013032,51.06666666666666,Centre Ville Canet Arnavaux Jean Jaurès,13055,Marseille
+QP013033,40.233333333333334,La Cravache Le Trioulet,13055,Marseille
+QP013034,42.233333333333334,La Cayolle,13055,Marseille
+QP013035,45.53333333333333,La Sauvagère,13055,Marseille
+QP013036,49.833333333333336,Benza,13055,Marseille
+QP013037,43.4,Saint Thys,13055,Marseille
+QP013038,46.666666666666664,Air Bel,13055,Marseille
+QP013039,46.666666666666664,La Rouguière,13055,Marseille
+QP013040,49.300000000000004,Valbarelle Néréïdes Bosquet,13055,Marseille
+QP013041,35.0,Les Escourtines,13055; 13070,Marseille; La Penne-sur-Huveaune
+QP013042,57.9,Malpassé Corot,13055,Marseille
+QP013043,41.266666666666666,Balustres Cerisaie,13055,Marseille
+QP013044,52.96666666666667,Frais Vallon Le Clos La Rose,13055,Marseille
+QP013045,47.800000000000004,Le Petit Séminaire,13055,Marseille
+QP013046,51.5,La Marie,13055,Marseille
+QP013047,40.93333333333333,Les Olives,13055,Marseille
+QP013048,42.9,La Simiane La Paternelle,13055,Marseille
+QP013049,55.26666666666667,Bon Secours Les Rosiers Marine Bleue Grand Saint Barthélémy Saint Jérôme,13055,Marseille
+QP013050,50.5,Le Castellas Les Micocouliers Saint Joseph,13055,Marseille
+QP013051,54.13333333333333,La Castellane La Bricarde Plan D'Aou Saint Antoine,13055,Marseille
+QP013052,49.36666666666667,Consolat Ruisseau Mirabeau,13055,Marseille
+QP013053,48.76666666666667,La Calade Campagne Lévèque,13055,Marseille
+QP013054,59.63333333333333,Les Aygalades,13055,Marseille
+QP013055,60.63333333333333,Kalliste La Granière La Solidarité,13055,Marseille
+QP013056,60.26666666666667,La Savine,13055,Marseille
+QP013057,50.4,Les Tilleuls La Maurelette,13055,Marseille
+QP013058,52.56666666666666,La Cabucelle,13055,Marseille
+QP013059,40.63333333333333,La Visitation - Bassens,13055,Marseille
+QP013060,38.333333333333336,Saint André,13055,Marseille
+QP013061,35.1,Le Prépaou,13047,Istres
+QP013062,32.13333333333333,La Carraire,13063,Miramas
+QP013063,43.03333333333333,La Maille,13063,Miramas
+QP013064,34.86666666666667,La Soude Bengale,13055,Marseille
+QP013065,35.6,Caillols La Moularde,13055,Marseille
+QP014001,43.1,Chemin Vert,14118,Caen
+QP014002,45.96666666666667,Grâce De Dieu,14118; 14271,Caen; Fleury-sur-Orne
+QP014003,51.6,Guérinière,14118; 14341,Caen; Ifs
+QP014004,47.63333333333333,Pierre Heuzé,14118,Caen
+QP014005,38.06666666666666,Calvaire Saint Pierre,14118,Caen
+QP014007,36.6,Grande Delle - Val - Belles Portes - Grand Parc - Haute Folie,14327,Hérouville-Saint-Clair
+QP014008,45.9,Canteloup - Marronniers - Honfleur,14333,Honfleur
+QP014009,46.333333333333336,Hauteville,14366,Lisieux
+QP015001,41.6,Aurillac Sud,15014,Aurillac
+QP016001,53.666666666666664,Basseau - Grande Garenne,16015,Angoulême
+QP016002,46.333333333333336,Ma Campagne,16015,Angoulême
+QP016003,46.46666666666667,Bel Air - La Grand Font,16015,Angoulême
+QP016004,38.800000000000004,L'Etang Des Moines,16113,La Couronne
+QP016005,52.833333333333336,Champ De Manoeuvre,16374,Soyaux
+QP016006,51.23333333333333,Crouin,16102,Cognac
+QP017001,39.166666666666664,Mireuil,17300,La Rochelle
+QP017002,43.73333333333333,Villeneuve-Les-Salines,17300,La Rochelle
+QP017003,53.46666666666667,Bellevue - Boiffiers,17415,Saintes
+QP017004,36.23333333333333,Centre Ville - Avant-Garde,17299,Rochefort
+QP017005,47.9,Le Petit Marseille,17299,Rochefort
+QP017006,36.93333333333334,Eco quartier l'Yeuse-La Robinière,17306,Royan
+QP017007,35.6,Port-Neuf,17300,La Rochelle
+QP018001,46.93333333333334,Bourges Nord,18033,Bourges
+QP018002,44.96666666666667,Val D'Auron - Bourges,18033,Bourges
+QP018003,42.199999999999996,Le Vernet - Saint Amand Montrond,18197,Saint-Amand-Montrond
+QP018004,47.93333333333334,Clos Du Roy - Centre Ville - Vierzon,18279,Vierzon
+QP019001,41.266666666666666,Rivet,19031,Brive-la-Gaillarde
+QP019002,43.1,Tujac,19031,Brive-la-Gaillarde
+QP019003,38.9,Les Chapélies,19031,Brive-la-Gaillarde
+QP021002,37.96666666666667,Le Mail,21166,Chenôve
+QP021003,38.300000000000004,Fontaine D'Ouche,21231,Dijon
+QP021004,44.43333333333334,Les Grésilles,21231,Dijon
+QP021005,39.46666666666667,Le Bief Du Moulin,21355,Longvic
+QP021006,36.1,Le Belvédère,21617,Talant
+QP022001,40.63333333333333,Ar Santé - Les Fontaines,22113,Lannion
+QP022002,40.800000000000004,Ker Uhel,22113,Lannion
+QP022004,41.1,Croix Saint-Lambert - Ville Oger,22278,Saint-Brieuc
+QP022005,47.300000000000004,Le Plateau - Europe - Balzac,22278,Saint-Brieuc
+QP022006,39.166666666666664,Point Du Jour,22278,Saint-Brieuc
+QP022007,47.0,La Fontaine Des Eaux,22050,Dinan
+QP023001,42.76666666666667,L'Albatros,23096,Guéret
+QP024001,37.43333333333333,Rive Gauche,24037,Bergerac
+QP024002,37.5,Quartier Des Deux Rives,24037,Bergerac
+QP024003,37.06666666666666,Quartier Nord,24037,Bergerac
+QP024004,51.300000000000004,Chamiers,24138,Coulounieix-Chamiers
+QP024005,44.0,La Boucle De L'Isle,24138; 24322,Coulounieix-Chamiers; Périgueux
+QP025001,30.733333333333334,Le Grand Longs Traits,25462,Pontarlier
+QP025003,45.53333333333333,Orchamps - Palente,25056,Besançon
+QP025004,47.13333333333333,Planoise,25056,Besançon
+QP025005,39.5,Montrapon,25056,Besançon
+QP025006,44.23333333333333,Clairs Soleils,25056,Besançon
+QP025007,46.800000000000004,Les Champs Montants,25031,Audincourt
+QP025008,42.13333333333333,Champvallon,25057,Bethoncourt
+QP025009,47.699999999999996,Les Fougères,25284,Grand-Charmont
+QP025010,43.53333333333333,Chiffogne,25388,Montbéliard
+QP025011,42.63333333333333,Petite Hollande,25388,Montbéliard
+QP025012,36.13333333333333,Les Evoironnes,25547,Sochaux
+QP025013,44.56666666666666,Les Buis,25580,Valentigney
+QP026001,38.03333333333334,Centre Ancien,26281,Romans-sur-Isère
+QP026002,54.699999999999996,Quartiers Ouest,26198,Montélimar
+QP026003,38.666666666666664,Nocaze,26198,Montélimar
+QP026004,39.766666666666666,Centre Ancien,26198,Montélimar
+QP026005,57.166666666666664,Quartier Est,26281,Romans-sur-Isère
+QP026006,51.6,Polygone,26362,Valence
+QP026007,48.56666666666666,Les Hauts De Valence,26362,Valence
+QP026008,40.63333333333333,Valensoles,26362,Valence
+QP026009,35.9,Chamberlière,26362,Valence
+QP026010,42.166666666666664,Le Roc,26235,Pierrelatte
+QP026011,36.233333333333334,Coeur De Loriol,26325,Saint-Rambert-d'Albon
+QP026012,52.199999999999996,Clairval,26166,Loriol-sur-Drôme
+QP027001,44.76666666666667,Valmeux - Blanchères,27681,Vernon
+QP027002,50.833333333333336,Boutardes,27681,Vernon
+QP027003,55.1,La Madeleine,27229,Évreux
+QP027004,55.23333333333333,Nétreville,27229,Évreux
+QP027005,42.5,Navarre,27229,Évreux
+QP027006,47.23333333333333,Maison-Rouge,27375,Louviers
+QP027007,47.699999999999996,Acacias - La Londe - Les Oiseaux,27375,Louviers
+QP027008,44.76666666666667,Centre Ville,27701,Val-de-Reuil
+QP027009,36.733333333333334,Le Bourg Le Comte,27056,Bernay
+QP027010,38.56666666666666,L'Europe,27467,Pont-Audemer
+QP027011,36.9,La Passerelle,27467,Pont-Audemer
+QP028001,37.93333333333333,Les Vauvettes,28404,Vernouillet
+QP028002,44.666666666666664,Quartier Des Clos,28085,Chartres
+QP028003,45.43333333333334,Vieux Puits,28218,Lucé
+QP028004,37.13333333333333,Bruxelles - Arcades - Béguines,28218,Lucé
+QP028005,51.699999999999996,Tallemont - Bretagne,28229,Mainvilliers
+QP028006,48.23333333333333,Les Bâtes Tabellionne,28134; 28404,Dreux; Vernouillet
+QP028007,38.56666666666667,Les Rochelles - Barthou,28134,Dreux
+QP028008,54.1,Dunant - Kennedy,28134,Dreux
+QP028009,48.833333333333336,Camus - Schweitzer,28088,Châteaudun
+QP028010,47.43333333333334,Le Val,28280,Nogent-le-Rotrou
+QP029001,46.26666666666667,Kerandon,29039,Concarneau
+QP029002,38.699999999999996,Kermoysan,29232,Quimper
+QP029003,45.199999999999996,Kerourien,29019,Brest
+QP029004,34.53333333333333,Bellevue,29019,Brest
+QP029005,41.06666666666667,Keredern,29019,Brest
+QP029006,44.333333333333336,Lambezellec Bourg,29019,Brest
+QP029007,43.6,Pontanezen,29019,Brest
+QP029008,39.733333333333334,Queliverzan Pontaniou,29019,Brest
+QP029009,46.0,Kerangoff Loti,29019,Brest
+QP02A001,42.0,Pifano,2A247,Porto-Vecchio
+QP02A002,29.3,Salines,2A004,Ajaccio
+QP02B001,35.666666666666664,Quartier Sud,2B033,Bastia
+QP02B002,39.699999999999996,Centre Ancien,2B033,Bastia
+QP030001,46.199999999999996,Près Saint Jean - Cévennes - Tamaris - Cauvel-la Royale - Rochebelle - Centre ville,30007,Alès
+QP030002,41.9,Centre Ville,30010,Anduze
+QP030003,67.8,Pissevin - Valdegour,30189,Nîmes
+QP030004,44.5,Gambetta-Richelieu,30189,Nîmes
+QP030005,59.36666666666667,Chemin-Bas D'Avignon - Clos D'Orville,30189,Nîmes
+QP030006,54.26666666666667,Mas De Mingue,30189,Nîmes
+QP030007,36.36666666666667,Route De Beaucaire,30189,Nîmes
+QP030008,49.06666666666666,Némausus-Jonquilles - Haute Magaille - Oliviers,30189,Nîmes
+QP030009,55.23333333333333,Sabatot - Centre Ancien,30258,Saint-Gilles
+QP030010,52.199999999999996,Escanaux - Coronelle - Citadelle - Vigan Braquet,30028,Bagnols-sur-Cèze
+QP030011,44.06666666666666,Centre Ville,30202,Pont-Saint-Esprit
+QP030012,46.300000000000004,La Moulinelle,30032,Beaucaire
+QP030013,47.0,Centre Ville,30032,Beaucaire
+QP030014,44.1,L'Ecusson,30227,Saint-Ambroix
+QP030015,50.86666666666667,Les Costières,30341,Vauvert
+QP030016,45.333333333333336,Centre Ville - Arboux,30051; 30132; 30307,Branoux-les-Taillades; La Grand-Combe; Les Salles-du-Gardon
+QP030017,56.666666666666664,Trescol - La Levade,30051; 30132; 30307,Branoux-les-Taillades; La Grand-Combe; Les Salles-du-Gardon
+QP030018,38.03333333333333,Quartier Prioritaire D'Uzès,30334,Uzès
+QP031001,35.9,Saint Jean,31395,Muret
+QP031002,32.13333333333333,Centre Ouest,31395,Muret
+QP031003,35.333333333333336,Coeur De Ville,31483,Saint-Gaudens
+QP031004,41.1,Barradels,31069,Blagnac
+QP031005,33.333333333333336,Val D'Aran - Poitou - Pyrénées,31149,Colomiers
+QP031006,41.333333333333336,Pradettes,31555,Toulouse
+QP031007,46.6,Grand Mirail,31555,Toulouse
+QP031008,32.53333333333334,Arènes,31555,Toulouse
+QP031010,42.9,Empalot,31555,Toulouse
+QP031011,39.63333333333333,Les Izards - La Vache,31555,Toulouse
+QP031012,37.333333333333336,Cépière Beauregard,31555,Toulouse
+QP031013,28.366666666666664,Saint Exupéry,31555,Toulouse
+QP031014,36.0,Soupetard,31555,Toulouse
+QP031016,36.833333333333336,En Jacca,31149,Colomiers
+QP031017,34.333333333333336,Vivier Maçon,31157,Cugnaux
+QP031019,33.4,La Gloire,31555,Toulouse
+QP032001,51.36666666666667,Grand Garros,32013,Auch
+QP033001,33.06666666666667,Quartier Champ De Course,33069; 33162,Le Bouscat; Eysines
+QP033002,31.53333333333333,Yser - Pont De Madame,33281,Mérignac
+QP033003,37.166666666666664,Quartier Du centre,33138,Coutras
+QP033004,40.666666666666664,Quartier Bourg,33324; 33402,Pineuilh; Sainte-Foy-la-Grande
+QP033005,35.03333333333333,Quartier De L'Avenir,33032,Bassens
+QP033006,32.43333333333334,Carle Vernet -Terres Neuves,33039; 33063,Bègles; Bordeaux
+QP033007,50.4,Le Lac,33063,Bordeaux
+QP033008,34.63333333333333,Saint-Michel,33063,Bordeaux
+QP033009,44.166666666666664,Benauge - Henri Sellier - Léo Lagrange,33063; 33119,Bordeaux; Cenon
+QP033010,31.96666666666667,Grand-Parc,33063,Bordeaux
+QP033011,36.166666666666664,Bacalan,33063,Bordeaux
+QP033012,39.333333333333336,Palmer - Saraillère - 8 Mai 45 - Dravemont,33119; 33167,Cenon; Floirac
+QP033013,36.4,Grand Caillou,33162,Eysines
+QP033014,34.300000000000004,Jean-Jaurès,33167,Floirac
+QP033015,33.73333333333333,Barthez,33192,Gradignan
+QP033016,38.266666666666666,Carriet,33249,Lormont
+QP033017,40.333333333333336,Génicart Est,33249,Lormont
+QP033018,31.599999999999998,Alpilles-Vincennes-Bois Fleuri,33249,Lormont
+QP033019,34.0,Beaudésert,33281,Mérignac
+QP033020,36.03333333333333,Châtaigneraie - Arago,33318,Pessac
+QP033021,34.699999999999996,Saige,33318,Pessac
+QP033022,35.93333333333333,Thouars,33522,Talence
+QP033023,28.25,Paty Monmousseau,33039,Bègles
+QP034001,54.9,Centre Ville,34032,Béziers
+QP034002,53.4,Iranget Grangette,34032,Béziers
+QP034003,61.6,Devèze,34032,Béziers
+QP034004,36.699999999999996,Celleneuve,34172,Montpellier
+QP034005,58.1,Mosson,34172,Montpellier
+QP034006,57.699999999999996,Petit Bard Pergola,34172,Montpellier
+QP034007,44.866666666666674,Pas Du Loup - Val De Croze,34172,Montpellier
+QP034008,47.5,Cévennes,34172,Montpellier
+QP034009,50.73333333333333,Gély,34172,Montpellier
+QP034010,42.6,Figuerolles,34172,Montpellier
+QP034011,34.766666666666666,Lemasson,34172,Montpellier
+QP034012,38.766666666666666,Près D'Arènes,34172,Montpellier
+QP034013,38.6,Pompignane,34172,Montpellier
+QP034014,43.63333333333333,Aiguelongue,34172,Montpellier
+QP034016,43.53333333333333,Les Deux Pins,34108,Frontignan
+QP034017,60.76666666666667,Ile De Thau,34301,Sète
+QP034018,40.46666666666667,Centre Ville - Ile Sud,34301,Sète
+QP034019,45.36666666666667,Centre Ville,34003,Agde
+QP034020,38.23333333333333,Centre Ville,34028,Bédarieux
+QP034021,46.56666666666666,Centre Et Périphérie,34145,Lunel
+QP034022,44.76666666666667,Centre Ville,34142,Lodève
+QP035001,38.13333333333333,La Découverte,35288,Saint-Malo
+QP035002,41.333333333333336,Villejean,35238,Rennes
+QP035003,41.833333333333336,Les Clôteaux - Champs Manceaux,35238,Rennes
+QP035004,46.666666666666664,Maurepas,35238,Rennes
+QP035005,43.699999999999996,Le Blosne,35238,Rennes
+QP035006,42.0,Cleunay,35238,Rennes
+QP036001,44.9,Beaulieu,36044,Châteauroux
+QP036002,51.6,Saint Jean - Saint Jacques,36044,Châteauroux
+QP036003,36.1,Vaugirard - Saint Christophe,36044,Châteauroux
+QP036004,43.699999999999996,Nation Bernardines,36088,Issoudun
+QP037001,34.93333333333334,La Verrerie,37003,Amboise
+QP037002,47.13333333333333,Rabière,37122,Joué-lès-Tours
+QP037003,36.699999999999996,Niqueux Bruère - Marcel Pagnol,37195,La Riche
+QP037004,34.53333333333334,Rabaterie,37233,Saint-Pierre-des-Corps
+QP037005,47.1,Fontaines,37261,Tours
+QP037006,49.333333333333336,Rochepinard,37261,Tours
+QP037007,37.9,Rives Du Cher,37261,Tours
+QP037008,37.166666666666664,Europe,37261,Tours
+QP037009,52.96666666666666,Sanitas,37261,Tours
+QP037010,36.36666666666667,Maryse Bastié,37261,Tours
+QP037011,41.699999999999996,Bords De Loire,37261,Tours
+QP037012,35.766666666666666,Patte D'Oie - Malétrenne - Plaisance,37003,Amboise
+QP038001,34.53333333333333,La Luire - Viscose,38151,Échirolles
+QP038002,43.26666666666667,Champaret,38053,Bourgoin-Jallieu
+QP038003,44.03333333333333,Essarts - Surieux,38151,Échirolles
+QP038004,37.13333333333333,Village Sud,38151,Échirolles
+QP038005,29.7,Alpes Mail Cachin,38169,Fontaine
+QP038006,45.300000000000004,Mistral Lys Rouge Camine,38185,Grenoble
+QP038007,40.4,Villeneuve - Village Olympique,38185,Grenoble
+QP038008,44.833333333333336,Teisseire Abbaye Jouhaux Châtelet,38185,Grenoble
+QP038009,41.86666666666667,Alma - Très Cloîtres - Chenoise,38185,Grenoble
+QP038010,32.53333333333333,Iles De Mars Olympiades,38317,Le Pont-de-Claix
+QP038011,32.93333333333333,Renaudie - Champberton - La Plaine,38421,Saint-Martin-d'Hères
+QP038012,39.166666666666664,Brunetière,38563,Voiron
+QP038013,44.833333333333336,Champfleuri,38053,Bourgoin-Jallieu
+QP038014,35.13333333333333,Saint Hubert,38193,L'Isle-d'Abeau
+QP038015,41.5,Saint Bonnet,38553,Villefontaine
+QP038016,38.63333333333333,Les Roches,38553,Villefontaine
+QP038018,44.56666666666666,Vieux Péages - Les Ayencins,38298; 38344,Le Péage-de-Roussillon; Roussillon
+QP038019,40.266666666666666,Route De Sablons,38298; 38344,Le Péage-de-Roussillon; Roussillon
+QP038021,33.0,Barbières,38087,Chasse-sur-Rhône
+QP038022,41.199999999999996,Plan Des Aures,38318,Pont-Évêque
+QP038023,38.1,Estressin,38544,Vienne
+QP038024,48.53333333333333,Vallée De Gère,38544,Vienne
+QP038025,38.43333333333333,Les Genêts Cancane Charlemagne,38318; 38544,Pont-Évêque; Vienne
+QP038026,39.766666666666666,Malissol,38544,Vienne
+QP039001,56.13333333333333,Mesnils Pasteur,39198,Dole
+QP039002,42.833333333333336,Marjorie - Les Mouillères,39300,Lons-le-Saunier
+QP039003,45.23333333333333,Les Avignonnets,39478,Saint-Claude
+QP039004,39.43333333333334,Chabot - Le Miroir,39478,Saint-Claude
+QP040001,32.733333333333334,Le Sablar,40088,Dax
+QP040002,37.0,Cuyès,40088,Dax
+QP040003,33.86666666666667,Le Gond,40088,Dax
+QP040004,45.5,Le Peyrouat,40192,Mont-de-Marsan
+QP040005,42.86666666666667,La Moustey,40281,Saint-Pierre-du-Mont
+QP041001,52.26666666666667,Kennedy - Coty - Croix Chevallier - Sarrazines,41018,Blois
+QP041002,52.23333333333333,Les Rottes,41269,Vendôme
+QP041003,53.43333333333334,Les Favignolles,41194,Romorantin-Lanthenay
+QP042001,42.5,Beauregard,42147,Montbrison
+QP042002,33.53333333333333,La Chapelle,42005,Andrézieux-Bouthéon
+QP042003,45.96666666666667,La Romière,42044,Le Chambon-Feugerolles
+QP042004,39.833333333333336,Montrambert Méline,42044; 42183,Le Chambon-Feugerolles; La Ricamarie
+QP042005,35.96666666666667,Le Dorlay - Les Pins - La Bachasse,42103; 42271,La Grand-Croix; Saint-Paul-en-Jarez
+QP042006,43.333333333333336,Montcel - Centre Ville,42183,La Ricamarie
+QP042007,44.03333333333333,Grand Pont,42186,Rive-de-Gier
+QP042008,43.9,Centre Ville,42186,Rive-de-Gier
+QP042009,35.06666666666666,Centre Ville,42207,Saint-Chamond
+QP042010,43.9,St Julien - Crêt De L'Oeillet,42207,Saint-Chamond
+QP042011,42.43333333333333,Cotonne Montferré,42218,Saint-Étienne
+QP042012,43.06666666666666,Tarentaize Beaubrun,42218,Saint-Étienne
+QP042013,43.9,Montreynaud,42218,Saint-Étienne
+QP042014,38.26666666666667,Crêt De Roc - Soleil,42218,Saint-Étienne
+QP042015,53.800000000000004,Quartiers Sud-Est,42218,Saint-Étienne
+QP042016,36.13333333333333,Terrenoire,42218,Saint-Étienne
+QP042017,40.53333333333333,Bourgogne,42187,Roanne
+QP042018,53.13333333333333,Le Parc,42187,Roanne
+QP042019,49.03333333333333,Mayollet,42187,Roanne
+QP043001,44.4,Val Vert,43157,Le Puy-en-Velay
+QP043002,37.13333333333333,Guitard,43157,Le Puy-en-Velay
+QP044001,39.166666666666664,Ville Ouest,44184,Saint-Nazaire
+QP044002,44.86666666666667,Petit Caporal,44184,Saint-Nazaire
+QP044003,51.300000000000004,Robespierre - Prézégat,44184,Saint-Nazaire
+QP044004,46.86666666666667,La Ville Aux Roses,44036,Châteaubriant
+QP044005,36.03333333333333,Bellevue,44109; 44162,Nantes; Saint-Herblain
+QP044006,49.56666666666666,Les Dervallières,44109,Nantes
+QP044007,40.833333333333336,Le Breil,44109,Nantes
+QP044008,42.03333333333333,Bout Des Landes - Bout Des Pavés - Chêne Des anglais,44109,Nantes
+QP044009,44.133333333333326,La Boissière,44109,Nantes
+QP044010,38.96666666666667,Port Boyer,44109,Nantes
+QP044011,40.9,Le Clos Toreau,44109,Nantes
+QP044012,38.166666666666664,Le Ranzay,44109,Nantes
+QP044013,40.96666666666667,Malakoff,44109,Nantes
+QP044014,47.53333333333333,Bottière Pin Sec,44109,Nantes
+QP044015,40.56666666666666,La Halvêque,44109,Nantes
+QP044016,36.800000000000004,La Petite Sensive,44109,Nantes
+QP044017,37.06666666666667,Plaisance,44114,Orvault
+QP044018,32.833333333333336,Château,44143,Rezé
+QP044019,56.53333333333334,Le Sillon De Bretagne,44162,Saint-Herblain
+QP045001,35.800000000000004,Les Chaises,45285,Saint-Jean-de-la-Ruelle
+QP045002,50.13333333333333,Vésine,45068,Châlette-sur-Loing
+QP045003,53.833333333333336,Le Plateau,45068; 45208; 45338,Châlette-sur-Loing; Montargis; Villemandeur
+QP045004,37.36666666666667,La Chaussée,45208,Montargis
+QP045005,52.5,Le Bourg - Chautemps,45068; 45208,Châlette-sur-Loing; Montargis
+QP045006,41.233333333333334,Le Clos De La Grande Salle,45147,Fleury-les-Aubrais
+QP045007,45.9,Andrillons Ormes Du mail,45147,Fleury-les-Aubrais
+QP045008,31.766666666666666,Lignerolles,45147,Fleury-les-Aubrais
+QP045009,29.366666666666664,Dauphine,45234,Orléans
+QP045010,43.46666666666667,La Source,45234,Orléans
+QP045011,46.4,Argonne,45234,Orléans
+QP045012,36.96666666666667,Blossières,45234,Orléans
+QP045013,40.6,Pont Bordeaux,45284,Saint-Jean-de-Braye
+QP045014,54.93333333333334,Les 3 Fontaines,45285,Saint-Jean-de-la-Ruelle
+QP045015,36.9,Le Hameau,45315,Sully-sur-Loire
+QP045016,62.5,Champ De La Ville,45155,Gien
+QP045017,49.06666666666666,Montoire,45155,Gien
+QP045018,42.6,Quartiers Nord,45252,Pithiviers
+QP045019,56.73333333333333,Saint Aignan,45252,Pithiviers
+QP046001,36.63333333333333,Terre Rouge,46042,Cahors
+QP047001,51.36666666666667,Rodrigues - Barleté,47001,Agen
+QP047002,63.23333333333333,Montanou,47001,Agen
+QP047003,34.46666666666667,Pin,47001,Agen
+QP047004,42.800000000000004,Bastide Au Bord Du Lot,47252,Sainte-Livrade-sur-Lot
+QP047005,37.13333333333333,Bastide,47323,Villeneuve-sur-Lot
+QP047006,45.833333333333336,Baylac Gravette,47157,Marmande
+QP047007,36.63333333333333,Coeur De ville,47310,Tonneins
+QP049001,39.233333333333334,Belle Beille,49007,Angers
+QP049002,43.63333333333333,Roseraie,49007,Angers
+QP049003,51.333333333333336,Savary,49007,Angers
+QP049004,44.5,Grand Pigeon,49007,Angers
+QP049005,44.4,Monplaisir,49007,Angers
+QP049006,32.199999999999996,Hauts De Saint Aubin,49007,Angers
+QP049007,41.46666666666667,Beauval Bedier Morellerie,49007,Angers
+QP049008,46.13333333333333,Le Grand Bellevue,49353,Trélazé
+QP049009,49.13333333333333,Bretagne Bostangis,49099,Cholet
+QP049010,49.53333333333333,Jean Monnet,49099,Cholet
+QP049011,39.5,Favreau Les Mauges,49099,Cholet
+QP049012,37.6,Colline Villeneuve,49099,Cholet
+QP049013,41.23333333333333,Chemin Vert - Hauts Quartiers,49328,Saumur
+QP050001,35.36666666666667,La Turfaudière,50025,Avranches
+QP050002,35.53333333333333,Val Saint Jean,50502,Saint-Lô
+QP050003,37.266666666666666,La Dollée,50502,Saint-Lô
+QP050004,40.800000000000004,Claires Fontaines,50147,Coutances
+QP050005,45.23333333333333,Les Provinces,50129,Cherbourg-en-Cotentin
+QP050006,35.13333333333333,Maupas - Hautmarais - Brêche Du Bois,50129,Cherbourg-en-Cotentin
+QP050007,34.96666666666667,Fourches - Charcot,50129,Cherbourg-en-Cotentin
+QP051001,44.86666666666667,Quartier Prioritaire Ouest,51108,Châlons-en-Champagne
+QP051002,45.53333333333333,Quartier Prioritaire Sud,51108,Châlons-en-Champagne
+QP051003,59.666666666666664,Croix Rouge,51454,Reims
+QP051004,39.86666666666667,Wilson - Maison Blanche - Chatillons,51454,Reims
+QP051005,46.133333333333326,Orgeval,51454,Reims
+QP051006,39.166666666666664,Europe,51454,Reims
+QP051008,40.13333333333333,Walbaum,51454,Reims
+QP051009,42.63333333333333,Epinettes - Maladrerie - Chemin Des Bouchers,51454,Reims
+QP051010,40.699999999999996,Le Hamois,51649,Vitry-le-François
+QP051011,53.03333333333333,Rome Saint Charles,51649,Vitry-le-François
+QP051012,45.73333333333333,Bernon,51230,Épernay
+QP052001,47.23333333333333,Rochotte,52121,Chaumont
+QP052002,40.233333333333334,Cavalier,52121,Chaumont
+QP052003,53.166666666666664,Quartier Neuf,52269,Langres
+QP052004,49.0,Vert-Bois,52448,Saint-Dizier
+QP053001,45.333333333333336,Les Fourches,53130,Laval
+QP053002,58.333333333333336,Kellermann,53130,Laval
+QP053003,40.03333333333333,Pavement - Charité - Mortier - Murat,53130,Laval
+QP054001,34.43333333333333,Mouzimpré,54184,Essey-lès-Nancy
+QP054002,42.03333333333333,Gouraincourt - Remparts,54323,Longwy
+QP054003,41.300000000000004,Concorde,54261,Herserange
+QP054004,43.166666666666664,Quartier Voltaire,54323,Longwy
+QP054005,44.56666666666666,Val Saint Martin,54382,Mont-Saint-Martin
+QP054006,40.166666666666664,Quartier Les Mouettes,54115,Champigneulles
+QP054007,34.333333333333336,Quartier La Penotte,54215,Frouard
+QP054008,38.1,Bois Le Prêtre - Procheville,54431,Pont-à-Mousson
+QP054009,38.4,Centre Ancien,54329,Lunéville
+QP054010,56.56666666666666,Niederbronn - Zola,54329,Lunéville
+QP054011,49.800000000000004,Quartier La Croix De Metz,54528,Toul
+QP054012,56.9,La Californie,54274,Jarville-la-Malgrange
+QP054013,42.73333333333333,Les Provinces,54304,Laxou
+QP054014,43.73333333333333,Plateau De Haye - Champ Le Boeuf,54304; 54357,Laxou; Maxéville
+QP054015,55.46666666666667,Plateau De Haye Nancy - Maxéville,54357; 54395,Maxéville; Nancy
+QP054016,41.766666666666666,Haussonville - Les Nations,54395; 54547,Nancy; Vanduvre-lès-Nancy
+QP054017,35.73333333333333,Saint Michel Jéricho - Grands moulins,54339; 54395; 54482,Malzéville; Nancy; Saint-Max
+QP054018,41.4,Coeur De Ville,54526,Tomblaine
+QP055001,41.36666666666667,Côte Sainte-Catherine,55029,Bar-le-Duc
+QP055002,58.46666666666667,Planchettes,55545,Verdun
+QP055003,40.233333333333334,Centre Verdun - Cité verte,55545,Verdun
+QP056001,46.86666666666667,Gumenen Goaner - Parco Pointer,56007,Auray
+QP056002,42.4,Les 3 K : Kennedy - Kergohic - Kerihouais,56083,Hennebont
+QP056003,37.46666666666667,Centre Ville Kerfrehour,56098,Lanester
+QP056004,41.46666666666667,Kervenanec Nord,56121,Lorient
+QP056005,44.4,Polygone Frebault,56121,Lorient
+QP056006,53.166666666666664,Bois Du Château,56121,Lorient
+QP056007,45.46666666666667,Kerguillette Petit Paradis,56121,Lorient
+QP056008,51.199999999999996,Kercado,56260,Vannes
+QP056009,50.53333333333333,Ménimur,56260,Vannes
+QP057001,30.0,Quartier Saravis,57630,Sarrebourg
+QP057002,43.26666666666667,La Cité,57058,Behren-lès-Forbach
+QP057003,47.166666666666664,Wiesberg Hommel,57227,Forbach
+QP057004,53.76666666666667,Bellevue,57227,Forbach
+QP057005,42.699999999999996,Quartier Rémelange,57206,Fameck
+QP057006,49.13333333333333,Quartier Ouest,57683,Uckange
+QP057007,42.06666666666666,Côte Des Roses,57672,Thionville
+QP057008,49.833333333333336,Quartier Saint Pierre - La Millaire,57672,Thionville
+QP057009,46.300000000000004,Quartier Terrasses Des Provinces,57757,Yutz
+QP057010,55.4,Beausoleil,57631,Sarreguemines
+QP057011,40.06666666666666,Vieille Ville Et Ville Haute,57631,Sarreguemines
+QP057012,45.73333333333333,La Chapelle,57240; 57332,Freyming-Merlebach; Hombourg-Haut
+QP057013,33.666666666666664,Quartier République,57269,Guénange
+QP057014,40.0,Cité Du Furst,57224; 57690,Folschviller; Valmont
+QP057015,43.4,Carrière Wehneck,57606,Saint-Avold
+QP057016,41.93333333333333,Quartier Maroc,57160,Creutzwald
+QP057017,42.266666666666666,Quartier Breckelberg Fatima,57160,Creutzwald
+QP057018,50.93333333333334,Bellecroix,57463,Metz
+QP057019,50.36666666666667,Hauts De Vallières,57463,Metz
+QP057020,51.5,Borny,57463,Metz
+QP057021,45.23333333333333,Sablon Sud,57463,Metz
+QP057022,42.333333333333336,La Patrotte - Metz-Nord,57463,Metz
+QP057023,42.53333333333333,Quartier Saint-Eloy - Boileau-Pré Génie,57463; 57751,Metz; Woippy
+QP057024,37.833333333333336,Les Chênes,57332,Hombourg-Haut
+QP058001,52.43333333333334,Grande Pâture - Les Montôts,58194,Nevers
+QP058002,48.43333333333334,Le Banlay,58194,Nevers
+QP058003,46.56666666666666,Les Bords De Loire,58194,Nevers
+QP058004,46.96666666666667,La Baratte - Les Courlis,58194,Nevers
+QP058005,44.26666666666667,Saint Laurent,58086,Cosne-Cours-sur-Loire
+QP059001,35.233333333333334,Quartier Prioritaire De Hornaing,59314,Hornaing
+QP059002,36.166666666666664,Auby Centre,59028,Auby
+QP059003,40.333333333333336,Asturies - Belleforières,59028; 59509,Auby; Roost-Warendin
+QP059004,58.56666666666666,Résidence Gayant,59178,Douai
+QP059005,45.6,Flers En Escrebieux Pont De La Deûle - Dorignies,59178; 59234,Douai; Flers-en-Escrebieux
+QP059006,42.46666666666667,Frais Marais,59178; 59569; 59654,Douai; Sin-le-Noble; Waziers
+QP059007,41.699999999999996,Notre Dame - La Clochette - Le Bivouac,59178; 59569; 59654,Douai; Sin-le-Noble; Waziers
+QP059008,51.36666666666667,Faubourg De Béthune,59165; 59178,Cuincy; Douai
+QP059009,59.26666666666667,Les Epis,59569,Sin-le-Noble
+QP059010,39.666666666666664,Haut Terroir - Le Vivier,59654,Waziers
+QP059011,41.4,Les Explorateurs -  Place Du 8 Mai 1945 - Jean Jaurés - La Flamenne,59225,Feignies
+QP059012,37.733333333333334,Quartier Du Village,59230,Ferrière-la-Grande
+QP059013,51.166666666666664,Bois Du Quesnoy,59291,Hautmont
+QP059014,44.833333333333336,Centre Lambreçon,59324,Jeumont
+QP059015,60.4,Long Prés - Prés Du Paradis,59365,Louvroil
+QP059016,59.43333333333334,Pont De Pierre,59392,Maubeuge
+QP059017,65.3,Provinces Françaises,59392,Maubeuge
+QP059018,54.5,L'Epinette,59392,Maubeuge
+QP059019,48.63333333333333,Quartier Intercommunal Sous-Le Bois Montplaisir Rue D'Hautmont,59291; 59365; 59392; 59424,Hautmont; Louvroil; Maubeuge; Neuf-Mesnil
+QP059020,42.26666666666667,Verrerie - Square République,59014; 59491,Anzin; Raismes
+QP059021,41.03333333333333,Zone Intercommunale Rives De L'Escaut,59014; 59079; 59112; 59491; 59606,Anzin; Beuvrages; Bruay-sur-l'Escaut; Raismes; Valenciennes
+QP059022,45.833333333333336,Cité Thiers - Cité Du Rivage,59112; 59207; 59491,Bruay-sur-l'Escaut; Escautpont; Raismes
+QP059023,49.6,Centre Ville,59153,Condé-sur-l'Escaut
+QP059024,50.5,Lecocq,59153,Condé-sur-l'Escaut
+QP059025,41.300000000000004,Centre Ville,59253,Fresnes-sur-Escaut
+QP059026,37.233333333333334,Le Trieu,59253,Fresnes-sur-Escaut
+QP059027,40.666666666666664,Quatre Chasses Poudrière Faiencerie,59447; 59613,Onnaing; Vicq
+QP059028,43.46666666666667,Centre Ville,59484,Quiévrechain
+QP059029,42.6,La Pépinière,59544,Saint-Saulve
+QP059030,53.5,Dutemple Chasse Royale Saint Waast - La Sentinelle,59014; 59564; 59606,Anzin; La Sentinelle; Valenciennes
+QP059031,44.699999999999996,Zone Intercommunale Faubourg De Cambrai - La Briquette,59383; 59606,Marly; Valenciennes
+QP059032,38.13333333333333,Cité Le Jard,59616,Vieux-Condé
+QP059033,37.766666666666666,La Solitude Hermitage,59616,Vieux-Condé
+QP059034,36.06666666666667,Quartier Prioritaire d'Aniche,59008; 59024,Aniche; Auberchicourt
+QP059035,36.96666666666667,Quartier Prioritaire D'Auberchicourt Et Ecaillon,59024; 59185; 59390,Auberchicourt; Écaillon; Masny
+QP059036,40.6,Quartier Prioritaire De Masny,59390,Masny
+QP059037,36.06666666666667,Quartier Prioritaire De Montigny En Ostrevent,59414,Montigny-en-Ostrevent
+QP059038,42.666666666666664,Barrois,59414; 59456,Montigny-en-Ostrevent; Pecquencourt
+QP059039,44.03333333333333,Lemay Sainte Marie,59456,Pecquencourt
+QP059040,43.4,Quartier Prioritaire De Somain,59501; 59574,Rieulay; Somain
+QP059041,47.199999999999996,Résidences Pasteur Et Foch,59295,Hazebrouck
+QP059042,44.13333333333333,Centre Ville - Gambetta,59139,Caudry
+QP059043,35.5,Coeur D'Etoile,59481,Le Quesnoy
+QP059044,49.800000000000004,Fourmies,59249,Fourmies
+QP059045,36.53333333333333,Cité Des Bois,59452,Ostricourt
+QP059046,41.5,Vieux Centre Ville Saint Géry,59122,Cambrai
+QP059047,44.76666666666667,Quartier Saint Roch,59122,Cambrai
+QP059048,46.166666666666664,Quartier Amérique,59122,Cambrai
+QP059049,38.233333333333334,Résidence D'Esnes,59122,Cambrai
+QP059050,49.199999999999996,Centre,59172,Denain
+QP059051,48.23333333333333,Boulevard De La Liberté,59179,Douchy-les-Mines
+QP059052,46.26666666666667,Schneider,59205; 59361; 59504,Escaudain; Lourches; Rulx
+QP059053,38.36666666666667,Couture Savonnerie,59205,Escaudain
+QP059054,43.03333333333333,Gambetta,59172; 59205; 59361,Denain; Escaudain; Lourches
+QP059055,36.300000000000004,Sabatier,59491,Raismes
+QP059057,41.333333333333336,Collinière,59526,Saint-Amand-les-Eaux
+QP059058,30.0,Elnon,59526,Saint-Amand-les-Eaux
+QP059059,38.0,Arenberg,59491; 59632,Raismes; Wallers
+QP059060,43.4,Petit Steendam,59155,Coudekerque-Branche
+QP059061,46.23333333333333,Saint Pol Sur Mer Quartiers Ouest,59183,Dunkerque
+QP059062,40.53333333333333,Banc Vert - Ile Jeanty - Carré De La Vieille - Jeu De mail,59183,Dunkerque
+QP059063,36.1,Soubise - Basse Ville,59183,Dunkerque
+QP059064,42.5,Albeck - Europe - Moulin,59271,Grande-Synthe
+QP059065,45.53333333333333,Degroote,59588,Téteghem-Coudekerque-Village
+QP059066,45.36666666666667,Pont de Bois,59009,Villeneuve-d'Ascq
+QP059067,40.13333333333333,Résidence-Poste-Terroir,59009,Villeneuve-d'Ascq
+QP059069,36.9,Attargette - Chanzy,59017,Armentières
+QP059070,35.699999999999996,Bizet - Briquetterie,59017,Armentières
+QP059071,42.300000000000004,Quartier Intercommunal Hautchamps Longchamp - Lionderie - 3 Baudets,59299; 59367; 59512,Hem; Lys-lez-Lannoy; Roubaix
+QP059072,36.833333333333336,Pacot - Vandracq,59328,Lambersart
+QP059073,47.9,Secteur Ouest,59350,Lille
+QP059074,46.166666666666664,Secteur Sud,59220; 59346; 59350; 59360,Faches-Thumesnil; Lezennes; Lille; Loos
+QP059075,36.1,Secteur Nord Est,59350,Lille
+QP059076,39.166666666666664,Secteur Nord,59350,Lille
+QP059077,38.6,Les Oliveaux,59360,Loos
+QP059078,38.1,Clémenceau-Kiener,59360,Loos
+QP059079,45.96666666666667,La Briquetterie,59378,Marcq-en-Barul
+QP059080,38.733333333333334,Nouveau Mons - Les Sarts- Dombrowski,59009; 59350; 59410,Villeneuve-d'Ascq; Lille; Mons-en-Barul
+QP059081,42.43333333333334,Comtesse De Ségur,59507,Ronchin
+QP059082,49.166666666666664,Quartier Intercommunal Roubaix-Tourcoing - Blanc Seau - Croix Bas Saint Pierre,59163; 59512; 59599; 59650,Croix; Roubaix; Tourcoing; Wattrelos
+QP059083,43.5,Nouveau Roubaix,59512,Roubaix
+QP059084,47.46666666666667,La Mouchonnière,59560,Seclin
+QP059085,34.833333333333336,Phalempins,59599,Tourcoing
+QP059086,37.699999999999996,Virolois,59599,Tourcoing
+QP059087,53.199999999999996,La Bourgogne,59599,Tourcoing
+QP059088,34.333333333333336,Pont Rompu,59599,Tourcoing
+QP059089,37.666666666666664,Blanc Riez,59648,Wattignies
+QP059090,39.699999999999996,Epidéme Villas Couteaux,59599; 59650,Tourcoing; Wattrelos
+QP059091,32.96666666666667,Centralité De Beaulieu,59650,Wattrelos
+QP060001,46.333333333333336,Les Hauts De Creil,60175,Creil
+QP060002,44.5,Les Martinets,60414,Montataire
+QP060003,47.23333333333333,Les Côteaux,60463,Nogent-sur-Oise
+QP060004,44.73333333333333,Les Rochers L'Obier,60463,Nogent-sur-Oise
+QP060005,36.63333333333333,Belle Vue Belle Visée,60684,Villers-Saint-Paul
+QP060006,43.23333333333333,Vivier Corax,60159,Compiègne
+QP060007,46.300000000000004,Clos Des Roses,60159,Compiègne
+QP060008,36.5,La Victoire,60159,Compiègne
+QP060009,46.800000000000004,Saint Jean,60057,Beauvais
+QP060010,45.63333333333333,Saint Lucien,60057,Beauvais
+QP060011,42.86666666666667,Argentine,60057,Beauvais
+QP060012,42.93333333333334,Les Terriers,60509,Pont-Sainte-Maxence
+QP060013,47.300000000000004,Quartier De La Nacre,60395,Méru
+QP060014,40.23333333333333,Les Sables,60157,Clermont
+QP060016,29.53333333333333,Quartier Kennedy,60176,Crépy-en-Valois
+QP060017,42.0,Beauséjour,60471,Noyon
+QP060018,56.666666666666664,Mont Siméon,60471,Noyon
+QP061001,43.199999999999996,Les Provinces,61006,Argentan
+QP061002,43.06666666666666,Saint Michel - Vallée D'Auge,61006,Argentan
+QP061003,50.333333333333336,Saint Michel,61169,Flers
+QP061004,47.699999999999996,Saint Sauveur,61169,Flers
+QP061005,54.43333333333334,La Madeleine,61214,L'Aigle
+QP061006,60.0,Perseigne,61001,Alençon
+QP061007,47.06666666666666,Courteille,61001,Alençon
+QP062001,36.93333333333333,Quartier Du Mieux-Etre,62560,Marquise
+QP062002,39.06666666666667,Camus,62032,Angres
+QP062003,36.13333333333333,Plantigeons - Fosse 4,62215,Carvin
+QP062004,45.666666666666664,Centre Ville,62048,Auchel
+QP062005,40.56666666666666,Quartier Des Cité 5 - Cité De Marles - Cité Du Rond-Point,62048; 62194; 62555,Auchel; Calonne-Ricouart; Marles-les-Mines
+QP062006,43.36666666666667,Quartier Rimbert,62048; 62188,Auchel; Burbure
+QP062007,38.0,Quartier Du Regain,62083; 62443,Barlin; Hersin-Coupigny
+QP062008,44.9,Quartier Du Mont Liébaut,62119,Béthune
+QP062009,39.800000000000004,Quartier De La Rue De Lille,62119; 62848,Béthune; Verquin
+QP062010,42.76666666666667,Renaissance,62126; 62480,Beuvry; Labourse
+QP062011,41.6,Le Centre,62178; 62400,Bruay-la-Buissière; Haillicourt
+QP062012,41.166666666666664,Terrasses Basly,62178,Bruay-la-Buissière
+QP062013,34.63333333333333,Quartier Coteau Du Stade Parc-Cité 34,62178; 62270,Bruay-la-Buissière; Divion
+QP062014,46.23333333333333,Quartier Des Cités 6 Et 30,62194; 62270,Calonne-Ricouart; Divion
+QP062015,53.76666666666667,Quartier Provinces - Longues Trinques,62048; 62217,Auchel; Cauchy-à-la-Tour
+QP062016,39.53333333333333,Quartier Saint-Elie - Fosse 13,62276; 62401; 62464,Douvrin; Haisnes; Hulluch
+QP062017,42.43333333333333,Le Haut D'Houdain,62400; 62457,Haillicourt; Houdain
+QP062018,38.6,Terre-Noeve,62617,Nux-les-Mines
+QP062019,51.73333333333333,République - Cité 4,62065,Avion
+QP062020,44.333333333333336,Cité Des Brebis,62186; 62563,Bully-les-Mines; Mazingarbe
+QP062021,44.5,Cité Du Transvaal - Centre,62133; 62351,Billy-Montigny; Fouquières-lès-Lens
+QP062022,40.233333333333334,Cité 5 - Cité 11,62386; 62528,Grenay; Loos-en-Gohelle
+QP062023,44.76666666666667,Cité Bellevue,62413,Harnes
+QP062024,44.4,Cité 12-14,62498; 62528,Lens; Loos-en-Gohelle
+QP062025,51.4,Grande Résidence,62498; 62523; 62842,Lens; Loison-sous-Lens; Vendin-le-Vieil
+QP062026,45.833333333333336,Cité 2,62498,Lens
+QP062027,51.833333333333336,Sellier Cité 4,62498,Lens
+QP062028,44.76666666666667,Calonne - Marichelles - Vent De Bise,62510,Liévin
+QP062029,40.63333333333333,Les Hauts De Liévin - Résidence Des Provinces - Cités 9-9bis,62498; 62510; 62528,Lens; Liévin; Loos-en-Gohelle
+QP062030,50.86666666666667,Blum - Salengro - 109,62510,Liévin
+QP062031,44.03333333333333,3 Cités,62563,Mazingarbe
+QP062032,43.76666666666667,Cité 10,62737,Sains-en-Gohelle
+QP062033,44.03333333333333,Les Blanches Laines Fosse 11 12 13,62065; 62771,Avion; Sallaumines
+QP062034,48.800000000000004,Quartier du 3/15,62133; 62570; 62628; 62771,Billy-Montigny; Méricourt; Noyelles-sous-Lens; Sallaumines
+QP062035,37.56666666666667,Cité Des Taberneaux,62895,Wingles
+QP062036,59.53333333333333,Saint-Exupéry - Léon Blum,62040; 62525; 62765,Arques; Longuenesse; Saint-Omer
+QP062037,40.43333333333334,Quai Du commerce - Saint Sépulcre,62765,Saint-Omer
+QP062038,41.266666666666666,Du Village Au Moulin,62249,Courcelles-lès-Lens
+QP062039,48.23333333333333,Rotois - Saint Roch,62250,Courrières
+QP062040,39.96666666666667,Cornuault,62321,Évin-Malmaison
+QP062041,41.733333333333334,Macé - Darcy,62427,Hénin-Beaumont
+QP062042,51.56666666666666,Ponchelet - Kennedy,62427,Hénin-Beaumont
+QP062043,46.53333333333333,La Plaine Du 7,62250; 62351; 62587,Courrières; Fouquières-lès-Lens; Montigny-en-Gohelle
+QP062044,49.333333333333336,Zac Des Deux Villes,62427; 62587,Hénin-Beaumont; Montigny-en-Gohelle
+QP062045,43.0,Quartier Du Maroc - La Canche,62570; 62724,Méricourt; Rouvroy
+QP062046,42.86666666666667,Nouméa,62724,Rouvroy
+QP062047,46.13333333333333,Languedoc - Cité 10,62133; 62724,Billy-Montigny; Rouvroy
+QP062048,44.5,Quartier De La Haute Voie,62907,Libercourt
+QP062049,41.833333333333336,Damrémont,62160,Boulogne-sur-Mer
+QP062050,44.13333333333333,Centre Ville,62160,Boulogne-sur-Mer
+QP062051,52.0,Chemin Vert - Beaurepaire - Malborough,62160; 62758,Boulogne-sur-Mer; Saint-Martin-Boulogne
+QP062053,41.166666666666664,Quartier Tour Du Renard,62160; 62643; 62667,Boulogne-sur-Mer; Outreau; Le Portel
+QP062055,51.333333333333336,Fort Nieulay - Cailloux - Saint-Pierre,62193,Calais
+QP062056,60.1,Beau Marais,62193,Calais
+QP062057,43.666666666666664,Ville Centre,62516,Lillers
+QP062058,40.4,Centre Historique,62014,Aire-sur-la-Lys
+QP062059,44.666666666666664,Quartier De La Renaissance,62318,Étaples
+QP062060,45.06666666666666,Quatre As,62004,Achicourt
+QP062061,50.0,Arras Ouest,62041,Arras
+QP062062,45.03333333333333,Saint Michel Goudemand,62041,Arras
+QP062063,36.4,Cheminots Jean Jaurès Moulin Hacart,62004; 62041,Achicourt; Arras
+QP062064,50.03333333333333,Nouvelles Résidences,62753; 62764,Saint-Laurent-Blangy; Saint-Nicolas
+QP063002,52.833333333333336,Saint-Jacques,63113,Clermont-Ferrand
+QP063003,50.699999999999996,Quartiers Nord,63113,Clermont-Ferrand
+QP063004,47.6,La Gauthière,63113,Clermont-Ferrand
+QP063005,41.233333333333334,Fontaine Du Bac,63113,Clermont-Ferrand
+QP063006,38.36666666666667,Cournon D'Auvergne,63124,Cournon-d'Auvergne
+QP063007,40.76666666666667,Centre Ancien,63430,Thiers
+QP064001,32.199999999999996,Maubec - Citadelle,64102,Bayonne
+QP064002,36.266666666666666,Hauts De Sainte Croix,64102,Bayonne
+QP064003,40.0,Saragosse,64445,Pau
+QP064004,54.199999999999996,Ousse Des Bois,64445,Pau
+QP065001,54.666666666666664,Tarbes Ouest,65440,Tarbes
+QP065002,50.29999999999999,Tarbes Nord,65440,Tarbes
+QP065003,36.333333333333336,Tarbes Est,65440,Tarbes
+QP065004,36.1,Ophite,65286,Lourdes
+QP066001,42.699999999999996,Centre Ville,66065,Elne
+QP066002,38.4,Quartier Saint Assiscle,66136,Perpignan
+QP066003,43.76666666666667,Quartier Gare,66136,Perpignan
+QP066004,67.16666666666667,Quartier Bas-Vernet Ancien Zus,66136,Perpignan
+QP066005,60.833333333333336,Diagonale Du Haut - Moyen-Vernet,66136,Perpignan
+QP066006,65.46666666666667,Rois De Majorque,66136,Perpignan
+QP066007,38.93333333333334,Bas-Vernet Nouveau QPV,66136,Perpignan
+QP066008,54.86666666666667,Quartier Centre Ancien,66136,Perpignan
+QP066009,58.46666666666667,Quartier Nouveau Logis,66136,Perpignan
+QP066010,61.9,Quartier Champs De Mars,66136,Perpignan
+QP067001,30.433333333333334,Quartier Liberté,67046,Bischwiller
+QP067002,41.5,Les Pins - Musau,67180,Haguenau
+QP067003,35.733333333333334,Saverne - Quartiers Est,67437,Saverne
+QP067004,42.1,Quartiers Ouest,67043; 67447,Bischheim; Schiltigheim
+QP067005,52.43333333333334,Guirbaden,67043,Bischheim
+QP067006,38.13333333333333,Libermann,67218,Illkirch-Graffenstaden
+QP067008,35.96666666666666,Marais,67447,Schiltigheim
+QP067009,38.76666666666667,Hohberg,67482,Strasbourg
+QP067010,39.9,Molkenbronn,67267; 67482,Lingolsheim; Strasbourg
+QP067011,45.0,Hautepierre,67482,Strasbourg
+QP067012,38.0,Koenigshoffen-Est,67482,Strasbourg
+QP067013,42.699999999999996,Cronenbourg,67482,Strasbourg
+QP067014,47.800000000000004,Elsau,67482,Strasbourg
+QP067015,41.0,Laiterie,67482,Strasbourg
+QP067016,47.56666666666666,Neuhof - Meinau,67482,Strasbourg
+QP067017,38.63333333333333,Cité De L'Ill,67482,Strasbourg
+QP067018,37.800000000000004,Spach,67482,Strasbourg
+QP067019,42.4,Ampère,67482,Strasbourg
+QP067020,49.53333333333333,Port Du Rhin,67482,Strasbourg
+QP067021,34.56666666666667,Murhof,67482,Strasbourg
+QP068001,54.73333333333333,Florimont - Bel Air,68066,Colmar
+QP068002,44.06666666666666,Europe - Schweitzer,68066,Colmar
+QP068003,50.300000000000004,Quartier Les Coteaux,68224,Mulhouse
+QP068004,47.06666666666666,Quartier De Bourtzwiller,68224,Mulhouse
+QP068005,44.166666666666664,Péricentre,68224,Mulhouse
+QP068006,40.46666666666667,Drouot - Jonquilles,68154; 68224,Illzach; Mulhouse
+QP068007,36.6,Quartier Brustlein,68224,Mulhouse
+QP068008,37.86666666666667,Markstein - La Forêt,68376,Wittenheim
+QP068009,39.63333333333333,Quartier De La Gare,68297,Saint-Louis
+QP068010,41.96666666666667,Quartier Bel Air,68063,Cernay
+QP069002,35.233333333333334,Monod,69266,Villeurbanne
+QP069004,35.166666666666664,Centre,69091,Givors
+QP069005,38.9,Les Pérouses,69027,Brignais
+QP069006,37.5,Le Garet,69264,Villefranche-sur-Saône
+QP069007,42.1,Béligny,69264,Villefranche-sur-Saône
+QP069008,48.96666666666667,Belleroche,69092; 69115; 69264,Gleizé; Limas; Villefranche-sur-Saône
+QP069009,37.86666666666667,Aiguerande,69019,Belleville-en-Beaujolais
+QP069010,49.56666666666666,Parilly,69029,Bron
+QP069011,39.9,Terraillon - Chenier,69029; 69256,Bron; Vaulx-en-Velin
+QP069012,49.166666666666664,Les Vernes,69091,Givors
+QP069013,49.06666666666666,La Saulaie,69142; 69149,La Mulatière; Oullins-Pierre-Bénite
+QP069014,41.63333333333333,Hautes Roches,69149,Oullins-Pierre-Bénite
+QP069015,47.166666666666664,Minguettes - Clochettes,69199; 69259,Saint-Fons; Vénissieux
+QP069016,41.5,Arsenal - Carnot-Parmentier,69199,Saint-Fons
+QP069017,30.400000000000002,Les Collonges,69204,Saint-Genis-Laval
+QP069018,44.73333333333333,Grande Île,69256,Vaulx-en-Velin
+QP069019,36.6,Sud,69256,Vaulx-en-Velin
+QP069020,34.800000000000004,Duclos - Barel,69259,Vénissieux
+QP069022,35.666666666666664,Bel Air - Les Brosses,69266,Villeurbanne
+QP069023,40.13333333333333,Saint-Jean,69266,Villeurbanne
+QP069024,50.36666666666667,Les Buers Nord,69266,Villeurbanne
+QP069025,33.300000000000004,Tonkin,69266,Villeurbanne
+QP069026,38.06666666666666,Prainet,69275,Décines-Charpieu
+QP069027,32.43333333333334,Le Mathiolan,69282,Meyzieu
+QP069028,34.5,Ville Nouvelle,69286,Rillieux-la-Pape
+QP069029,36.166666666666664,Bellevue,69290,Saint-Priest
+QP069030,41.199999999999996,Garibaldi,69290,Saint-Priest
+QP069031,36.43333333333334,Bel Air,69290,Saint-Priest
+QP069032,39.699999999999996,Soeurs Janin,69123,Lyon
+QP069033,46.833333333333336,Cités Sociales Gerland,69123,Lyon
+QP069034,39.13333333333333,Moulin A Vent,69123,Lyon
+QP069035,33.833333333333336,Etats-Unis - Langlet Santy,69123; 69259,Lyon; Vénissieux
+QP069036,40.96666666666667,Mermoz,69123,Lyon
+QP069037,37.96666666666667,Duchère,69123,Lyon
+QP069038,35.0,Loucheur - Gorge De Loup,69123,Lyon
+QP069039,40.266666666666666,Les Plaines,69091,Givors
+QP069040,35.766666666666666,Vallon,69096,Grigny
+QP069041,39.06666666666667,Le Vergoin,69123,Lyon
+QP069042,46.633333333333326,Moncey,69123,Lyon
+QP069043,39.1,Les Plantées,69282,Meyzieu
+QP070001,46.03333333333333,Rêpes - Montmarin,70550,Vesoul
+QP070002,49.63333333333333,Le Mortard,70310,Lure
+QP070003,48.86666666666667,Stade Messier,70311,Luxeuil-les-Bains
+QP070004,45.666666666666664,Les Chenevières,70285,Héricourt
+QP070005,49.93333333333334,Les Capucins,70279,Gray
+QP071001,50.06666666666666,Aubépins,71076,Chalon-sur-Saône
+QP071003,44.13333333333333,Prés Saint-Jean,71076,Chalon-sur-Saône
+QP071004,49.333333333333336,La Chanaye - Résidence,71270,Mâcon
+QP071005,37.4,Les Blanchettes,71270,Mâcon
+QP071006,41.233333333333334,Les Saugeraies,71270,Mâcon
+QP071007,41.6,Marbé,71270,Mâcon
+QP071008,40.46666666666667,Saint Pantaléon,71014,Autun
+QP071009,47.333333333333336,Le Tennis,71153,Le Creusot
+QP071011,41.53333333333333,Rives Du Plessis,71306,Montceau-les-Mines
+QP071012,40.4,Bois Du Verne,71306,Montceau-les-Mines
+QP071013,36.36666666666667,Résidence Du Lac,71540,Torcy
+QP072001,43.0,La Rocade,72264,Sablé-sur-Sarthe
+QP072002,37.96666666666667,Chaoué Perrières,72003,Allonnes
+QP072003,50.46666666666667,Bellevue Carnac,72095; 72181,Coulaines; Le Mans
+QP072004,49.0,Ronceray Glonnières Vauguyon,72181,Le Mans
+QP072005,53.800000000000004,Les Sablons,72181,Le Mans
+QP072006,51.6,L' Epine,72181,Le Mans
+QP072007,39.23333333333333,Montreux,72264,Sablé-sur-Sarthe
+QP073001,33.5,Biollay - Bellevue,73065,Chambéry
+QP073002,38.800000000000004,Les Hauts De Chambéry,73065,Chambéry
+QP073004,46.6,Val De Roses - Contamine,73011,Albertville
+QP074001,38.6,Le Perrier - Château Rouge - Livron,74012,Annemasse
+QP074002,48.96666666666667,Le Chalet - Helvetia Park,74133,Gaillard
+QP074003,29.233333333333334,Les Ewües,74081,Cluses
+QP074004,42.699999999999996,Collonges Sainte-Hélène,74281,Thonon-les-Bains
+QP074005,47.800000000000004,Saint Georges - Route De Thairy,74243,Saint-Julien-en-Genevois
+QP074006,34.5,Bois Jolivet - Les Iles - Bellerive,74042,Bonneville
+QP075001,29.266666666666666,Bédier - Boutroux,75056,Paris
+QP075002,31.733333333333334,Chaufourniers,75056,Paris
+QP075003,35.733333333333334,Villa d'Este,75056,Paris
+QP075004,33.93333333333333,Kellermann - Paul Bourget,75056,Paris
+QP075006,36.333333333333336,Oudiné - Chevaleret,75056,Paris
+QP075007,34.93333333333333,Didot - Porte de Vanves,75056,Paris
+QP075008,34.23333333333333,Porte De Saint-Ouen - Porte Pouchet,75056,Paris
+QP075009,33.800000000000004,Blémont,75056,Paris
+QP075010,35.266666666666666,Porte Montmartre - Porte Des Poissonniers - Moskova,75056,Paris
+QP075011,33.833333333333336,La Chapelle - Evangile,75056,Paris
+QP075012,39.4,Goutte D'Or,75056,Paris
+QP075013,40.166666666666664,Porte De La Chapelle - Charles Hermite,75056,Paris
+QP075014,39.13333333333333,Stalingrad Riquet,75056,Paris
+QP075015,34.5,Michelet - Alphonse Karr - Rue de Nantes,75056,Paris
+QP075016,36.13333333333333,Danube - Solidarité - Marseillaise,75056,Paris
+QP075017,34.833333333333336,Algérie,75056,Paris
+QP075019,34.800000000000004,Les Portes Du Vingtième,75056,Paris
+QP075020,34.199999999999996,Grand Belleville 10ème - 11ème - 20ème,75056,Paris
+QP076001,47.166666666666664,Val Druel,76217,Dieppe
+QP076002,40.56666666666667,Neuville,76217,Dieppe
+QP076003,42.300000000000004,Les Bruyères,76217,Dieppe
+QP076004,34.233333333333334,Centre Ville,76305,Gonfreville-l'Orcher
+QP076005,41.166666666666664,Mont Gaillard,76351,Le Havre
+QP076006,40.06666666666667,Centre Ancien - Quartiers Sud,76351,Le Havre
+QP076007,45.56666666666666,Bois-De-Bléville,76351,Le Havre
+QP076008,41.03333333333333,Bléville Nord,76351,Le Havre
+QP076010,41.833333333333336,Caucriauville Soquence,76351,Le Havre
+QP076011,41.06666666666667,Plateau,76157,Canteleu
+QP076012,45.4,Quartier Des Arts Et Des Fleurs - Feugrais,76178; 76561,Cléon; Saint-Aubin-lès-Elbeuf
+QP076013,41.53333333333333,Parc Du Robec,76212,Darnétal
+QP076014,40.4,Centre Ville,76231,Elbeuf
+QP076015,42.56666666666666,Les Bouttières,76319,Grand-Couronne
+QP076017,38.93333333333333,Quartier De Binche,76410,Maromme
+QP076018,44.86666666666667,Le Quartier Jean Moulin,76474,Notre-Dame-de-Bondeville
+QP076019,40.0,Oissel Sur Seine Nord,76484,Oissel
+QP076020,44.03333333333333,Quartier De La Piscine,76498,Le Petit-Quevilly
+QP076021,48.5,Grammont,76540,Rouen
+QP076022,55.03333333333333,Les Hauts De Rouen,76095; 76540,Bihorel; Rouen
+QP076023,55.4,Quartier Château Blanc,76575,Saint-Étienne-du-Rouvray
+QP076024,37.06666666666666,Quartier Thorez - Grimau,76575,Saint-Étienne-du-Rouvray
+QP076025,37.0,Quartier Hartmann - La Houssière,76575,Saint-Étienne-du-Rouvray
+QP076026,38.5,Buisson - Gallouen,76575; 76681,Saint-Étienne-du-Rouvray; Sotteville-lès-Rouen
+QP076027,43.800000000000004,Lalizel,76057,Barentin
+QP076028,36.86666666666667,Parc Du Ramponneau,76259,Fécamp
+QP077001,36.833333333333336,La Renardière,77390,Roissy-en-Brie
+QP077002,32.766666666666666,La Grande Prairie,77108,Chelles
+QP077003,39.1,Schweitzer - Laennec,77108,Chelles
+QP077004,31.733333333333334,Orly Parc,77243,Lagny-sur-Marne
+QP077005,31.2,Les Deux Parcs-Luzard,77083; 77337,Champs-sur-Marne; Noisiel
+QP077006,30.866666666666664,L'Arche Guedon,77468,Torcy
+QP077007,33.1,Le Mail,77468,Torcy
+QP077008,33.86666666666667,La Plaine De Lys - Bernard De Poret,77152,Dammarie-les-Lys
+QP077009,34.0,Les Courtilleraie - Le Circé,77285,Le Mée-sur-Seine
+QP077010,36.666666666666664,Plateau De Corbeil - Plein-ciel,77285; 77288,Le Mée-sur-Seine; Melun
+QP077011,40.4,Les Mezereaux,77288,Melun
+QP077012,28.933333333333334,L'Almont,77288,Melun
+QP077013,40.43333333333334,Beauval Dunant,77284,Meaux
+QP077014,52.03333333333333,Surville,77305,Montereau-Fault-Yonne
+QP077015,42.699999999999996,Les Fougères,77014,Avon
+QP077016,38.699999999999996,Résidence Montmirail,77183,La Ferté-sous-Jouarre
+QP077017,46.23333333333333,Champbenoist,77379,Provins
+QP077018,29.766666666666666,Anne Franck,77350,Ozoir-la-Ferrière
+QP077019,37.5,Les Templiers,77131,Coulommiers
+QP077020,40.86666666666667,Mont Saint Martin,77333,Nemours
+QP077021,31.366666666666664,Quartier République Vilvaudé,77514,Villeparisis
+QP077022,29.599999999999998,Lugny Maronniers - Résidence Du Parc,77296,Moissy-Cramayel
+QP077023,29.133333333333336,Centre Ville -  Quartier De L'Europe,77445,Savigny-le-Temple
+QP078001,45.13333333333333,Val Fourré,78361,Mantes-la-Jolie
+QP078002,41.6,Merisiers Plaisances,78362,Mantes-la-Ville
+QP078003,37.5,Domaine De La Vallée,78362,Mantes-la-Ville
+QP078005,27.400000000000002,Pont Du Routoir 2,78297,Guyancourt
+QP078006,30.0,Merisiers-Plaine De Neauphle,78621,Trappes
+QP078007,37.6,Jean Macé,78621,Trappes
+QP078008,33.199999999999996,Bois De L'Etang,78644,La Verrière
+QP078009,34.166666666666664,Oiseaux,78123,Carrières-sous-Poissy
+QP078010,30.8,Fleurs,78123,Carrières-sous-Poissy
+QP078011,37.333333333333336,Noe-Feucherets,78138,Chanteloup-les-Vignes
+QP078012,34.43333333333334,Cité Du Parc,78643,Vernouillet
+QP078013,36.166666666666664,Centre-Sud,78335,Limay
+QP078014,25.133333333333336,Alouettes,78124,Carrières-sur-Seine
+QP078015,28.2,Plateau,78586,Sartrouville
+QP078017,38.0,Valibout,78490,Plaisir
+QP078018,24.8,Friches,78383,Maurepas
+QP078019,30.933333333333334,Beauregard,78498,Poissy
+QP078020,30.900000000000002,Saint Exupéry,78498,Poissy
+QP078021,41.43333333333333,Cinq Quartiers,78440,Les Mureaux
+QP078022,31.5,Cité Renault - Centre Ville,78440,Les Mureaux
+QP079001,53.833333333333336,Clou Bouchet,79191,Niort
+QP079002,43.73333333333333,Tour Chabot Gavacherie,79191,Niort
+QP079003,38.166666666666664,Pontreau Colline Saint André,79191,Niort
+QP079004,37.36666666666667,Les Capucins,79329,Thouars
+QP079005,42.0,Valette,79049,Bressuire
+QP080001,56.699999999999996,Étouvie,80021,Amiens
+QP080002,41.36666666666667,Pierre Rollin,80021,Amiens
+QP080003,52.333333333333336,Amiens Nord,80021,Amiens
+QP080004,52.63333333333333,Marcel Paul Salamandre,80021,Amiens
+QP080005,41.56666666666667,Condorcet Philéas Lebesgue,80021,Amiens
+QP080006,36.766666666666666,Les Parcheminiers,80021,Amiens
+QP080007,58.06666666666666,Soleil Levant,80001,Abbeville
+QP080008,47.9,L'Espérance,80001,Abbeville
+QP080009,40.300000000000004,Les Argillières,80001,Abbeville
+QP081001,53.699999999999996,La Falgalarié,81021,Aussillon
+QP081002,60.5,Laden Petit Train,81065,Castres
+QP081003,52.63333333333333,Lameilhé,81065,Castres
+QP081004,44.699999999999996,Aillot Bisséous Lardaillé,81065,Castres
+QP081005,33.86666666666667,Centre Ville,81065,Castres
+QP081006,62.666666666666664,Cantepau,81004,Albi
+QP081007,42.199999999999996,Veyrières Rayssac,81004,Albi
+QP081008,49.76666666666667,Lapanouse,81004,Albi
+QP081009,40.4,Rajol - Cérou - Gourgatieux - Bouloc - Verrerie,81060,Carmaux
+QP081010,43.833333333333336,Lentajou - Catalanis,81099,Gaillac
+QP081011,41.833333333333336,Crins - En Gach,81105,Graulhet
+QP082001,36.766666666666666,Coeur de Ville,82121,Montauban
+QP082002,44.46666666666667,Médiathèque - Chambord,82121,Montauban
+QP082003,43.4,Centre Ville,82112,Moissac
+QP082004,46.06666666666666,Sarlac,82112,Moissac
+QP083001,30.5,L'Agachon,83061,Fréjus
+QP083002,38.800000000000004,Centre Ville,83050,Draguignan
+QP083003,34.699999999999996,Les Collettes,83050,Draguignan
+QP083004,46.86666666666667,Centre Ville,83086,Le Muy
+QP083005,44.333333333333336,Romain Rolland,83062,La Garde
+QP083006,45.96666666666667,Centre Ville,83069,Hyères
+QP083007,44.96666666666666,Val Des Rougières,83069,Hyères
+QP083008,49.0,Berthe,83126,La Seyne-sur-Mer
+QP083009,41.53333333333333,Centre Ville,83126,La Seyne-sur-Mer
+QP083010,50.93333333333334,La Beaucaire,83137,Toulon
+QP083011,40.9,La Florane,83137,Toulon
+QP083012,64.89999999999999,Pontcarral,83137,Toulon
+QP083013,38.26666666666667,Pont Du Las- Rodeilhac,83137,Toulon
+QP083014,41.56666666666666,Beaulieu- Sainte Marie,83137,Toulon
+QP083015,65.56666666666668,Sainte Musse,83137,Toulon
+QP083016,52.300000000000004,Centre Ville,83137,Toulon
+QP083017,49.6,Le Jonquet- La Baume- Le Guynemer,83137,Toulon
+QP083018,57.03333333333333,La Gabelle,83061,Fréjus
+QP083019,42.73333333333333,Centre Ville - Le Vergeiras,83073,Le Luc
+QP083020,40.9,Centre Ville,83023,Brignoles
+QP083021,50.333333333333336,Le Carami,83023,Brignoles
+QP084001,39.53333333333333,Quartiers Griffons Et Centre Ville,84129,Sorgues
+QP084002,53.46666666666667,Monclar Champfleury Rocade Sud Barbière Croix Des Oiseaux,84007,Avignon
+QP084003,51.56666666666666,Quartiers Nord Est,84007,Avignon
+QP084004,54.300000000000004,Quartier De Saint Chamand,84007,Avignon
+QP084005,52.699999999999996,Quartiers Camp Rambaud - Les Mérides,84092,Le Pontet
+QP084007,36.06666666666666,Quartiers Centre Ancien Et Sud Ouest,84089,Pertuis
+QP084008,55.76666666666667,Centre Ville,84031,Carpentras
+QP084009,54.4,Amandier - Eléphants,84031,Carpentras
+QP084010,72.8,Pous Du Plan,84031,Carpentras
+QP084011,43.03333333333333,Quintine - Villemarie - Ubac - Le Parc,84031,Carpentras
+QP084012,52.0,Fourchevieilles Comtadines L'Aygues,84087,Orange
+QP084013,53.96666666666667,Quartiers Nogent Saint Clément,84087,Orange
+QP084014,49.333333333333336,Quartiers Générat Establet,84129,Sorgues
+QP084015,42.300000000000004,Quartier De Chaffunes,84129,Sorgues
+QP084016,42.73333333333333,Quartiers Du Vieux Moulin Aux Mûriers,84080,Monteux
+QP084017,45.699999999999996,Centre Ancien Et Quartier De Saint Michel,84003,Apt
+QP084018,47.5,Quartiers Nord - Ouest,84054,L'Isle-sur-la-Sorgue
+QP084019,47.5,Centre ancien - Les Tours - La Gaillarde - Mistral - Sévigné,84138,Valréas
+QP084020,54.26666666666667,Quartiers Dr Ayme Condamines Barillon Saint Martin Bon Puits Saint Gilles Ratacans,84035,Cavaillon
+QP084021,59.4,Quartiers La Clède Gare Route De Pertuis Saint Anne,84035,Cavaillon
+QP084022,50.43333333333334,Nord Du Centre Ancien Giono Ouest,84019,Bollène
+QP085001,40.666666666666664,Jean Yole - Pyramides,85191,La Roche-sur-Yon
+QP085002,42.73333333333333,Vigne-aux-Roses,85191,La Roche-sur-Yon
+QP085003,34.800000000000004,Liberté - Zola,85191,La Roche-sur-Yon
+QP085004,42.43333333333334,Centre - Moulins Liots,85092,Fontenay-le-Comte
+QP086001,51.9,Lac Renardières Ozon,86066,Châtellerault
+QP086002,38.733333333333334,Châteauneuf Centre Ville,86066,Châtellerault
+QP086003,43.96666666666667,Bel Air,86194,Poitiers
+QP086004,52.26666666666667,Trois Cités,86194; 86214,Poitiers; Saint-Benoît
+QP086005,39.333333333333336,Couronneries,86041; 86194,Buxerolles; Poitiers
+QP086006,39.36666666666667,Beaulieu,86194,Poitiers
+QP087001,57.93333333333334,Portes Ferrées,87085,Limoges
+QP087002,57.76666666666667,La Bastide,87085,Limoges
+QP087003,38.9,Le Sablard,87085,Limoges
+QP087004,48.9,Beaubreuil,87085,Limoges
+QP087005,59.833333333333336,Val De L'Aurence Sud,87085,Limoges
+QP087006,50.333333333333336,Val De L'Aurence Nord,87085,Limoges
+QP087007,36.93333333333334,Les Coutures,87085,Limoges
+QP087008,41.43333333333334,Bellevue,87085,Limoges
+QP087009,38.0,Le Vigenal,87085,Limoges
+QP088001,50.166666666666664,Bitola,88160,Épinal
+QP088002,56.6,La Justice,88160,Épinal
+QP088003,45.56666666666666,Le Haut Du Gras,88209,Golbey
+QP088004,44.76666666666667,Le Rhumont,88383,Remiremont
+QP088005,48.666666666666664,Saint Roch - L'Orme,88413,Saint-Dié-des-Vosges
+QP088006,48.46666666666667,Kellermann,88413,Saint-Dié-des-Vosges
+QP089001,39.1,La Rive Droite,89024,Auxerre
+QP089002,44.4,Les Brichères - Sainte Geneviève,89024,Auxerre
+QP089003,53.76666666666667,Les Rosoirs,89024,Auxerre
+QP089004,43.0,Pompidou-Ravel,89257,Migennes
+QP089005,52.4,La Madeleine,89206,Joigny
+QP089006,49.666666666666664,Arènes - Champs Plaisants,89387,Sens
+QP089007,38.26666666666667,Les Chaillots,89387,Sens
+QP090001,35.300000000000004,Bougenel - Mulhouse,90010,Belfort
+QP090002,56.833333333333336,Les Glacis Du Château,90010,Belfort
+QP090003,37.4,Dardel La Méchelle,90010,Belfort
+QP090004,45.26666666666667,Résidences Le Mont,90008; 90010,Bavilliers; Belfort
+QP090005,42.833333333333336,Arsot Ganghoffer,90075; 90099,Offemont; Valdoie
+QP091001,25.03333333333333,Le Bois Des Roches,91570,Saint-Michel-sur-Orge
+QP091002,52.166666666666664,Les Tarterêts,91174,Corbeil-Essonnes
+QP091003,35.6,Montconseil,91174,Corbeil-Essonnes
+QP091004,35.199999999999996,La Nacelle,91174,Corbeil-Essonnes
+QP091005,34.46666666666667,Rive Droite,91174,Corbeil-Essonnes
+QP091006,33.766666666666666,Quartier Ouest,91692,Les Ulis
+QP091007,30.833333333333332,Les Ardrets,91103,Brétigny-sur-Orge
+QP091008,33.03333333333333,Les Aunettes,91235,Fleury-Mérogis
+QP091009,31.833333333333332,La Grange Aux Cerfs,91549,Sainte-Geneviève-des-Bois
+QP091010,35.333333333333336,Les Aunettes,91549,Sainte-Geneviève-des-Bois
+QP091011,40.199999999999996,Les Hautes Mardelles,91114,Brunoy
+QP091012,31.066666666666666,Plaine - Cinéastes,91215,Épinay-sous-Sénart
+QP091013,32.166666666666664,Le Vieillet,91514,Quincy-sous-Sénart
+QP091014,29.866666666666664,Bel Air - Rocade,91345,Longjumeau
+QP091015,34.43333333333333,Bièvre Poterne - Zola,91377,Massy
+QP091016,34.766666666666666,Le Canal,91228,Évry-Courcouronnes
+QP091017,36.166666666666664,Pyramides - Bois Sauvage,91228,Évry-Courcouronnes
+QP091018,30.166666666666668,Les Aunettes,91228,Évry-Courcouronnes
+QP091019,33.36666666666667,Champtier Du Coq,91228,Évry-Courcouronnes
+QP091020,36.53333333333333,Petit Bourg,91228,Évry-Courcouronnes
+QP091021,31.066666666666663,Le Parc Aux Lièvres,91228,Évry-Courcouronnes
+QP091022,31.666666666666668,Les Passages,91228,Évry-Courcouronnes
+QP091023,30.53333333333333,Les Epinettes,91228,Évry-Courcouronnes
+QP091024,32.45,Champs Elysées,91228,Évry-Courcouronnes
+QP091025,31.566666666666666,Le Plateau,91521,Ris-Orangis
+QP091026,39.4,La Grande Borne - Le Plateau,91687,Viry-Châtillon
+QP091027,53.166666666666664,Grigny 2,91286,Grigny
+QP091028,29.066666666666666,Le Noyer Renard,91027,Athis-Mons
+QP091029,25.900000000000002,Clos Nollet,91027,Athis-Mons
+QP091030,35.6,Grand Vaux,91589,Savigny-sur-Orge
+QP091031,33.199999999999996,Les Bergeries,91201; 91657,Draveil; Vigneux-sur-Seine
+QP091032,31.733333333333334,La Forêt,91421,Montgeron
+QP091033,31.900000000000002,La Croix Blanche,91657,Vigneux-sur-Seine
+QP091034,33.300000000000004,La Prairie De L'Oly,91421; 91657,Montgeron; Vigneux-sur-Seine
+QP091035,56.0,Quartier Sud,91021,Arpajon
+QP091036,32.9,Le Tiec,91207,Égly
+QP091037,38.333333333333336,Plateau De Guinette,91223,Étampes
+QP091038,45.43333333333334,La Croix  De Vernailles,91223,Étampes
+QP091039,28.96666666666667,Opéra,91377,Massy
+QP092002,35.833333333333336,Université I,92050,Nanterre
+QP092003,30.2,Université II,92050,Nanterre
+QP092004,30.3,Noyer Doré,92002,Antony
+QP092005,30.400000000000002,Cité Jardins,92019,Châtenay-Malabry
+QP092006,35.46666666666667,Chemin De L'île,92050,Nanterre
+QP092007,34.199999999999996,Le Parc,92050,Nanterre
+QP092008,35.26666666666667,Abbé Grégoire - Mirabeau,92007,Bagneux
+QP092009,28.26666666666667,Tertres-Cuverons,92007; 92014; 92032; 92071,Bagneux; Bourg-la-Reine; Fontenay-aux-Roses; Sceaux
+QP092010,29.666666666666668,Les Courtilles,92036,Gennevilliers
+QP092011,31.733333333333334,Fossés Jean,92025,Colombes
+QP092012,30.366666666666664,Hauts d'Asnières,92004,Asnières-sur-Seine
+QP092013,31.600000000000005,Agnettes,92036,Gennevilliers
+QP092015,36.9,Petit Colombes,92025,Colombes
+QP092016,37.300000000000004,Petit Nanterre,92050,Nanterre
+QP092018,38.03333333333333,Grésillons Voltaire II - Grésillons,92036,Gennevilliers
+QP092019,30.03333333333333,AIRE 2029,92078,Villeneuve-la-Garenne
+QP092020,29.566666666666666,Cité Des Musiciens,92007,Bagneux
+QP092021,40.93333333333333,Les Musiciens,92025,Colombes
+QP093001,38.0,Secteur Gare - Aviatic,93013,Le Bourget
+QP093002,30.133333333333336,Secteur Saint-Nicolas - Guynemer - Gai Logis,93013,Le Bourget
+QP093003,51.0,Haut Clichy - Centre Ville - Bosquets - Lucien Noel,93014; 93047,Clichy-sous-Bois; Montfermeil
+QP093004,38.06666666666667,Quartier Avenir Parisien,93029,Drancy
+QP093005,32.233333333333334,Quartiers La Muette - Village Parisien,93008; 93029,Bobigny; Drancy
+QP093006,43.699999999999996,Quartiers Economie - Les Oiseaux,93007; 93029,Le Blanc-Mesnil; Drancy
+QP093007,39.86666666666667,Thorez - Larivière - Langevin - Moulin - Allende,93030,Dugny
+QP093008,51.0,La Capsulerie,93006,Bagnolet
+QP093009,37.9,Le Plateau - Les Malassis - La Noue,93006; 93048,Bagnolet; Montreuil
+QP093010,37.333333333333336,Les Courtillières - Pont-De-Pierre,93008; 93055,Bobigny; Pantin
+QP093011,39.5,Quartier Salengro - Gaston Roulaud - Centre Ville,93008; 93029,Bobigny; Drancy
+QP093012,45.9,Blanqui,93010,Bondy
+QP093013,35.86666666666667,Marnaudes - Fosse Aux Bergers - La Sablière,93010; 93077,Bondy; Villemomble
+QP093014,39.166666666666664,Abreuvoir - Bondy Nord - Bondy Centre - Pont-De-Bondy - La Sablière - Secteur Sud,93007; 93008; 93010; 93053,Le Blanc-Mesnil; Bobigny; Bondy; Noisy-le-Sec
+QP093015,40.96666666666667,Trois Communes - Fabien,93048; 93053; 93063,Montreuil; Noisy-le-Sec; Romainville
+QP093016,36.4,Branly - Boissière,93048; 93053,Montreuil; Noisy-le-Sec
+QP093017,34.5,Boissière - Saussaie-Beauclair,93064,Rosny-sous-Bois
+QP093018,44.06666666666666,Bel Air - Grands Pêchers - Ruffins - Le Morillon,93048,Montreuil
+QP093019,32.5,Jean Moulin - Espoir,93048,Montreuil
+QP093020,32.03333333333333,Béthisy,93053,Noisy-le-Sec
+QP093021,41.63333333333333,Le Londeau,93053,Noisy-le-Sec
+QP093022,41.1,La Boissière,93053,Noisy-le-Sec
+QP093023,35.56666666666666,Sept Arpents - Stalingrad,93055,Pantin
+QP093024,47.63333333333333,Quatre Chemins,93055,Pantin
+QP093025,40.86666666666667,Marcel Cachin,93063,Romainville
+QP093026,38.833333333333336,Quartier de L'Horloge,93063,Romainville
+QP093027,32.46666666666667,Gagarine,93063,Romainville
+QP093028,43.1,Franc Moisin - Cosmonautes - Cristino Garcia - Landy,93001; 93008; 93027; 93066,Aubervilliers; Bobigny; La Courneuve; Saint-Denis
+QP093029,36.333333333333336,Centre Ville,93031,Épinay-sur-Seine
+QP093030,39.199999999999996,Orgemont,93031,Épinay-sur-Seine
+QP093031,34.53333333333333,La Source - Les Presles,93031,Épinay-sur-Seine
+QP093032,31.46666666666667,Thorez-Géraux,93039,L'Île-Saint-Denis
+QP093033,32.53333333333333,Méchin - Bocage,93039,L'Île-Saint-Denis
+QP093034,48.13333333333333,Paul-Cachin,93039,L'Île-Saint-Denis
+QP093035,43.86666666666667,Centre Ville - Chatenay - Maroc - Poètes,93059; 93072,Pierrefitte-sur-Seine; Stains
+QP093036,52.666666666666664,Joncherolles - Fauvettes,93059,Pierrefitte-sur-Seine
+QP093037,39.23333333333333,Plaine - Landy - Bailly,93066,Saint-Denis
+QP093039,36.43333333333334,Grand Centre - Sémard,93066,Saint-Denis
+QP093040,47.26666666666667,Floréal Saussaie Allende,93066; 93072,Saint-Denis; Stains
+QP093041,46.833333333333336,Plaine Trezel - Chaudron,93066,Saint-Denis
+QP093042,41.166666666666664,Saint-Rémy - Joliot Curie - Bel Air,93066,Saint-Denis
+QP093043,42.36666666666667,Langevin - Lavoisier - Tartres - Allende,93059; 93066,Pierrefitte-sur-Seine; Saint-Denis
+QP093044,37.233333333333334,Cordon,93070,Saint-Ouen-sur-Seine
+QP093045,33.76666666666667,Michelet - Les Puces - Debain,93070,Saint-Ouen-sur-Seine
+QP093046,37.233333333333334,Vieux Saint-Ouen,93070,Saint-Ouen-sur-Seine
+QP093047,35.43333333333333,Pasteur - Arago - Zola,93070,Saint-Ouen-sur-Seine
+QP093048,41.13333333333333,Centre Elargi,93072,Stains
+QP093049,35.800000000000004,Quartier Politique De La Ville,93079,Villetaneuse
+QP093050,40.4,Rougemont,93005; 93071,Aulnay-sous-Bois; Sevran
+QP093051,37.333333333333336,Montceleux - Pont Blanc,93071,Sevran
+QP093052,33.6,Parc De La Noue - Picasso - Pasteur - Europe - Merisiers,93078,Villepinte
+QP093053,37.86666666666667,Tremblay Grand Ensemble,93073,Tremblay-en-France
+QP093054,39.699999999999996,Les Beaudottes,93005,Aulnay-sous-Bois
+QP093055,39.93333333333334,Secteur Nord Pont-Yblon,93007; 93030,Le Blanc-Mesnil; Dugny
+QP093056,30.46666666666667,Jean Moulin - Jean Bouin,93032,Gagny
+QP093057,34.699999999999996,Les Peupliers,93032,Gagny
+QP093058,33.6,Val Coteau,93050,Neuilly-sur-Marne
+QP093059,37.5,Mont d'Est - Palacio,93051,Noisy-le-Grand
+QP093060,32.4,Pavé-Neuf,93051,Noisy-le-Grand
+QP093061,29.0,Champy - Hauts Bâtons,93051,Noisy-le-Grand
+QP093062,38.1,Pré-Gentil,93064,Rosny-sous-Bois
+QP093063,29.066666666666666,Marnaudes - Bois-Perrier,93064,Rosny-sous-Bois
+QP094001,36.53333333333333,Pierre Et Marie Curie,94041,Ivry-sur-Seine
+QP094002,30.166666666666668,Irlandais - Paul Vaillant Couturier - Cherchefeuille,94003,Arcueil
+QP094003,29.03333333333333,La Haie Griselle - La Hêtraie,94004; 94044,Boissy-Saint-Léger; Limeil-Brévannes
+QP094004,43.800000000000004,Chantereine,94002,Alfortville
+QP094005,36.266666666666666,Mont Mesly - La Habette - Coteaux Du Sud,94028,Créteil
+QP094007,29.733333333333334,Les Bleuets,94028,Créteil
+QP094008,36.36666666666667,Gagarine,94041,Ivry-sur-Seine
+QP094009,47.300000000000004,Ivry Port,94041,Ivry-sur-Seine
+QP094010,37.46666666666667,Monmousseau,94041,Ivry-sur-Seine
+QP094011,30.96666666666667,Colonel Fabien,94081,Vitry-sur-Seine
+QP094012,33.766666666666666,Centre Ville : Defresne - Vilmorin - Robespierre,94081,Vitry-sur-Seine
+QP094013,33.266666666666666,Commune De Paris - 8 Mai 1945,94081,Vitry-sur-Seine
+QP094015,36.699999999999996,Péri - Schuman  Bergonié,94037; 94043,Gentilly; Le Kremlin-Bicêtre
+QP094016,27.733333333333334,Chaperon Vert,94003; 94037,Arcueil; Gentilly
+QP094017,28.833333333333332,Jardins Parisiens,94038,L'Haÿ-les-Roses
+QP094018,33.96666666666666,Lallier,94021; 94038,Chevilly-Larue; L'Haÿ-les-Roses
+QP094019,38.23333333333333,Jardins Parisiens - Stade,94038,L'Haÿ-les-Roses
+QP094020,34.333333333333336,Alexandre Dumas,94076,Villejuif
+QP094021,35.06666666666667,Lebon - Hochart - Mermoz (Lozaits Sud),94038; 94076,L'Haÿ-les-Roses; Villejuif
+QP094022,31.96666666666667,Lozaits Nord - Grimau - Armand Gouret,94076,Villejuif
+QP094023,35.766666666666666,Fabien,94011,Bonneuil-sur-Marne
+QP094024,36.63333333333333,Les Quatre Cités,94017,Champigny-sur-Marne
+QP094025,67.06666666666666,L'Egalité,94017,Champigny-sur-Marne
+QP094026,36.0,Les Mordacs,94017,Champigny-sur-Marne
+QP094027,37.833333333333336,Le Bois L'Abbé,94017; 94019,Champigny-sur-Marne; Chennevières-sur-Marne
+QP094028,37.233333333333334,Le Plateau,94017,Champigny-sur-Marne
+QP094029,36.333333333333336,La Redoute (Le Fort-Michelet),94033,Fontenay-sous-Bois
+QP094030,34.6,Les Larris,94033,Fontenay-sous-Bois
+QP094031,28.599999999999998,Quartier Est,94054,Orly
+QP094032,37.06666666666666,Quartier Sud,94022,Choisy-le-Roi
+QP094033,33.0,Rives De La Marne,94068,Saint-Maur-des-Fossés
+QP094035,34.833333333333336,Polognes-Centre Ville - Le Plateau - Saint-Martin,94044; 94074; 94078,Limeil-Brévannes; Valenton; Villeneuve-Saint-Georges
+QP094036,34.666666666666664,Lutèce- Bergerie,94074,Valenton
+QP094037,44.833333333333336,Centre Ville,94078,Villeneuve-Saint-Georges
+QP094038,34.0,Le Quartier Nord,94078,Villeneuve-Saint-Georges
+QP094039,35.6,Le Quartier Nord- Les Tours,94078,Villeneuve-Saint-Georges
+QP094040,38.93333333333334,Triage,94078,Villeneuve-Saint-Georges
+QP094041,40.43333333333333,Portes De Paris - Les Hautes-Noues,94079,Villiers-sur-Marne
+QP095001,26.53333333333333,Noyer Crapaud,95598,Soisy-sous-Montmorency
+QP095002,67.53333333333335,Justice - Butte Blanche,95018; 95063,Argenteuil; Bezons
+QP095003,29.7,Champioux,95018,Argenteuil
+QP095004,41.06666666666666,Brigadières - Henri Barbusse,95018; 95063,Argenteuil; Bezons
+QP095005,38.13333333333333,Val D'Argent Nord,95018,Argenteuil
+QP095006,32.93333333333333,Val D'Argent Sud,95018,Argenteuil
+QP095007,34.3,Champagne,95018,Argenteuil
+QP095008,35.6,Joliot Curie,95018,Argenteuil
+QP095009,32.0,Centre Ville,95018,Argenteuil
+QP095010,38.1,Delaune Masson Colomb,95063,Bezons
+QP095011,33.96666666666667,Axe Majeur - Horloge,95127,Cergy
+QP095012,27.46666666666667,La Sébille,95127,Cergy
+QP095013,37.56666666666666,Les Dix Arpents,95218,Éragny
+QP095014,37.9,Le Moulinard,95476,Osny
+QP095015,37.9,Marcouville,95500,Pontoise
+QP095016,30.366666666666664,Louvrais,95500,Pontoise
+QP095017,48.23333333333333,Chennevières - Parc Le Nôtre,95572,Saint-Ouen-l'Aumône
+QP095018,30.766666666666666,Clos Du Roi,95323; 95637,Jouy-le-Moutier; Vauréal
+QP095019,28.0,Les Toupets - Côte Des Carrières,95323; 95637,Jouy-le-Moutier; Vauréal
+QP095020,40.93333333333333,Les Lévriers,95427,Montmagny
+QP095021,28.03333333333333,Centre Ville,95427,Montmagny
+QP095022,42.03333333333333,Mare Des Noues,95219; 95252,Ermont; Franconville
+QP095023,27.266666666666666,Montédour,95252,Franconville
+QP095024,36.06666666666666,Les Naquettes,95306,Herblay-sur-Seine
+QP095025,32.5,Les Frances,95424,Montigny-lès-Cormeilles
+QP095026,27.333333333333332,Clos Saint Pierre Elargi,95488,Pierrelaye
+QP095027,33.43333333333333,Bas Des Aulnaies - Carreaux Fleuris - Fontaine Bertin,95252; 95582,Franconville; Sannois
+QP095028,38.199999999999996,Les Pins,95607,Taverny
+QP095029,27.96666666666667,Les Sarments Et Les Nérins,95607,Taverny
+QP095030,35.13333333333333,Cottage Elargi,95280,Goussainville
+QP095031,36.93333333333333,Grandes Bornes Elargies,95280,Goussainville
+QP095032,45.96666666666667,Dame Blanche,95268,Garges-lès-Gonesse
+QP095033,38.233333333333334,Lochères,95585,Sarcelles
+QP095034,34.43333333333334,Carreaux - Fauconnière - Marronniers - Pôle Gare,95019; 95277; 95680,Arnouville; Gonesse; Villiers-le-Bel
+QP095035,33.666666666666664,Saint Blin,95019; 95277,Arnouville; Gonesse
+QP095036,34.76666666666667,Rosiers Chantepie,95585,Sarcelles
+QP095037,37.733333333333334,Village - Mozart,95585,Sarcelles
+QP095038,40.56666666666667,Village - Le Puits La Marlière - Derrière Les Murs De Monseigneur,95680,Villiers-le-Bel
+QP095039,32.43333333333333,Les Chênes,95219,Ermont
+QP095040,38.300000000000004,Le Village,95487,Persan
+QP095041,26.5,Les Raguenets,95555,Saint-Gratien

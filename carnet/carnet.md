@@ -131,3 +131,13 @@ On a maintenant les deux côtés (QPV traité + IRIS contrôle) pour 2012, 2013,
 - Seuil de proximité pour l'appariement sur pauvreté pré-traitement (ex. ± X points de taux de pauvreté, ou méthode de matching plus formelle ?)
 - Périmètre exact de communes de comparaison (seuil de population à fixer sur toute la période)
 - Composition exacte du volet ML "typologie" : quelles variables du fichier socio 2012-2014 (et/ou du thème Démographie 2017+) retenir précisément
+
+## 17. Appariement finalisé (commune + repli unité urbaine)
+
+Table commune -> unité urbaine (UU2020) obtenue via la Table d'appartenance géographique des communes (INSEE, millésime 2026). Règle d'appariement à deux niveaux : même commune en priorité, repli sur l'unité urbaine si aucun IRIS candidat en commune.
+
+Résultat : 1015/1248 QPV appariés (81%, contre 888/1248 soit 71% avec la seule règle "commune"). 233 QPV toujours sans contrôle (bassins urbains trop petits pour contenir un seul IRIS). Fait notable : les appariements de repli (niveau unité urbaine) sont en moyenne MEILLEURS (distance moyenne 5,6 points) que les appariements en commune stricte (14,2 points) — plus de candidats disponibles dans une zone plus large permet un meilleur choix parmi eux.
+
+Fichier `panel_qpv_2013_metropole.csv` retiré du dépôt (redondant avec `panel_qpv_2012_2014.csv`, gardé par erreur lors d'une étape antérieure).
+
+Décision en attente mise à jour : le seuil/méthode d'appariement (K=5 plus proches voisins) est maintenant stabilisé à deux niveaux commune/UU ; reste à décider si on garde tous les appariements (y compris les moins bons, ~20+ points d'écart) ou si on fait un test de robustesse sur le sous-ensemble le mieux apparié (voir section 16, option (c) recommandée, décision encore ouverte).
