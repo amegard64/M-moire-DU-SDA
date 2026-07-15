@@ -178,3 +178,13 @@ Trois points distincts à préciser explicitement dans la méthodologie (identif
 **3. Pourquoi l'écart de niveau résiduel après appariement n'est pas rédhibitoire** : la DiD neutralise mathématiquement tout écart de niveau stable dans le temps (voir démonstration : le double différenciement élimine les effets fixes de niveau). L'écart de niveau n'est un problème que s'il s'accompagne d'un écart de *rythme d'évolution* — précisément ce que l'appariement sur la pauvreté vise à éviter, et ce que la vérification empirique des tendances pré-2015 (quasi identiques malgré l'écart de niveau) vient corroborer.
 
 Brouillon de paragraphe rédigé pour la section méthodologie (voir réponse Claude du [session en cours] pour le texte complet) — à retravailler mais la structure logique est posée.
+
+## 21. Références bibliographiques confirmées : retour à la moyenne / biais d'Ashenfelter
+
+Trois niveaux à citer dans le mémoire (revue de littérature méthodologique) :
+
+1. **Galton, F. (1886)**, "Regression Towards Mediocrity in Hereditary Stature" — le mécanisme statistique de base (régression vers la moyenne). Quasi-mécanique : se manifeste dès que la corrélation entre deux mesures est <1 (Britannica).
+2. **Ashenfelter, O. (1978)**, sur les programmes de formation professionnelle — traduction du phénomène en biais d'évaluation de politiques publiques ("Ashenfelter's dip"), très largement cité depuis. Explicitement relié aux designs DiD combinant ciblage géographique/éligibilité (cf. notes de cours MIT/Harvard 14.771/2390b).
+3. **Rathelot, R. & Sillard, P. (2008)**, "Zones Franches Urbaines : quels effets sur l'emploi salarié et les créations d'établissements ?", Économie et Statistique n°415-416 ; et **Givord, Rathelot & Sillard (2011/2013)**, "Place-based tax exemptions and displacement effects", Regional Science and Urban Economics — application quasi-identique en France sur les ZFU (ancêtre méthodologique des QPV), utilisant explicitement un groupe de contrôle apparié pour cette même raison.
+
+Point clé pour la rédaction : le mécanisme de base (1) est une quasi-loi statistique ; son ampleur dans un contexte donné reste une question empirique (2 et 3), ce qui justifie la stratégie d'appariement retenue plutôt qu'une simple affirmation de principe.
