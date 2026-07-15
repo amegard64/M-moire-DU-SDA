@@ -166,3 +166,15 @@ Fichiers 2016 (.xls) et 2017-2019 (.xlsx) traités. Découvertes :
 Trajectoire QPV vs contrôle (groupes appariés, moyennes) : pas de rupture nette visible autour de 2015-2016 dans les moyennes agrégées ; les deux séries progressent de façon relativement régulière. Le taux de pauvreté fluctue dans une bande assez étroite pour les deux groupes (QPV : 41,7-45,1% ; contrôle : 26,7-28%) sans divergence flagrante. **Ceci reste une lecture purement descriptive de moyennes agrégées — ne remplace pas la régression event-study à faire.**
 
 Prochaine étape : spécifier et estimer la régression event-study (effets fixes + interaction traitement × année).
+
+## 20. Synthèse à intégrer au mémoire : justification du choix du groupe de contrôle
+
+Trois points distincts à préciser explicitement dans la méthodologie (identifiés suite aux questions d'Alexandre) :
+
+**1. Pourquoi les IRIS de contrôle doivent être pauvres (et pas juste "non-QPV")** : les QPV ont été sélectionnés sur leur pauvreté en 2011. Le niveau de pauvreté est corrélé au rythme d'évolution attendu (convergence/retour à la moyenne des zones très pauvres). Un contrôle à niveau très différent n'aurait donc probablement pas évolué au même rythme, violant l'hypothèse de tendance parallèle — indépendamment de toute politique.
+
+**2. Pourquoi des IRIS pauvres non-QPV existent** : le classement QPV repose sur (a) un seuil relatif au bassin urbain d'appartenance (pas un seuil national absolu), (b) un critère de concentration géographique et de taille de population minimale, (c) un ajustement politique local post-identification statistique, (d) un effet de seuil net sur un critère continu. Des zones presque aussi pauvres qu'un QPV mais non classées existent donc naturellement.
+
+**3. Pourquoi l'écart de niveau résiduel après appariement n'est pas rédhibitoire** : la DiD neutralise mathématiquement tout écart de niveau stable dans le temps (voir démonstration : le double différenciement élimine les effets fixes de niveau). L'écart de niveau n'est un problème que s'il s'accompagne d'un écart de *rythme d'évolution* — précisément ce que l'appariement sur la pauvreté vise à éviter, et ce que la vérification empirique des tendances pré-2015 (quasi identiques malgré l'écart de niveau) vient corroborer.
+
+Brouillon de paragraphe rédigé pour la section méthodologie (voir réponse Claude du [session en cours] pour le texte complet) — à retravailler mais la structure logique est posée.
