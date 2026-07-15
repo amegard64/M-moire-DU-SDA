@@ -1,0 +1,6 @@
+data/raw/
+*.xls
+*.xlsx
+*.zip
+__pycache__/
+*.pyc
