@@ -141,3 +141,14 @@ Résultat : 1015/1248 QPV appariés (81%, contre 888/1248 soit 71% avec la seule
 Fichier `panel_qpv_2013_metropole.csv` retiré du dépôt (redondant avec `panel_qpv_2012_2014.csv`, gardé par erreur lors d'une étape antérieure).
 
 Décision en attente mise à jour : le seuil/méthode d'appariement (K=5 plus proches voisins) est maintenant stabilisé à deux niveaux commune/UU ; reste à décider si on garde tous les appariements (y compris les moins bons, ~20+ points d'écart) ou si on fait un test de robustesse sur le sous-ensemble le mieux apparié (voir section 16, option (c) recommandée, décision encore ouverte).
+
+## 18. Couverture finale du groupe de contrôle (avec TAG_QPV_2015)
+
+Le fichier TAG_QPV2015_2025 (fourni par Alexandre) remplace la méthode de contournement par QP2024 pour le lien QPV -> commune : 1436 QPV avec commune (contre 1422 avant), et surtout 89 des 92 QPV auparavant sans correspondance sont désormais couverts. Petite approximation documentée : pour les QPV à cheval sur plusieurs communes (141 cas sur 1436), seule la première commune listée est retenue comme commune de rattachement principale.
+
+Pipeline entièrement relancé avec cette couverture améliorée :
+- QPV avec pauvreté pré-traitement + commune connue : 1296 (contre 1248)
+- IRIS candidats (communes avec QPV) : 9257, dont 877 exclus comme miroirs
+- **Appariement final (commune, repli unité urbaine, K=5 plus proches voisins sur pauvreté 2012-2014) : 1246/1296 QPV appariés (96%), 50 sans aucun contrôle disponible**
+
+C'est la version considérée comme définitive du groupe de contrôle pour la suite (vérification des tendances parallèles, puis régression).
