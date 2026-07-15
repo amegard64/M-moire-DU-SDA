@@ -152,3 +152,17 @@ Pipeline entièrement relancé avec cette couverture améliorée :
 - **Appariement final (commune, repli unité urbaine, K=5 plus proches voisins sur pauvreté 2012-2014) : 1246/1296 QPV appariés (96%), 50 sans aucun contrôle disponible**
 
 C'est la version considérée comme définitive du groupe de contrôle pour la suite (vérification des tendances parallèles, puis régression).
+
+## 19. Extension 2016-2019 (option A choisie)
+
+Fichiers 2016 (.xls) et 2017-2019 (.xlsx) traités. Découvertes :
+- Taux de pauvreté déjà présent dans le fichier "revenu disponible" dès 2016 (plus besoin du fichier socio séparé comme pour 2012-2014) — la bascule s'est donc produite entre 2014 et 2016 exactement.
+- Convention de nommage des colonnes change aussi entre 2017 (minuscules, `disp_q2_a17`) et 2018 (majuscules, `DISP_MED_A18`).
+- IRIS : ~23% de valeurs de pauvreté manquantes (secret statistique), cohérent avec les autres années.
+- Bug de lecture corrigé : la détection automatique de ligne d'en-tête prenait la ligne "lisible" au lieu de la ligne technique (toutes deux commencent par "IRIS") — corrigé en vérifiant aussi que la 2e colonne vaut "LIBIRIS".
+
+**Panel complet désormais disponible : 2012, 2013, 2014, 2016, 2017, 2018, 2019, 2021** (2015 et 2020 volontairement exclus : 2015 ambiguë sur le statut de traitement, 2020 fiable sur le statut mais pas sur la mesure - bruit Covid).
+
+Trajectoire QPV vs contrôle (groupes appariés, moyennes) : pas de rupture nette visible autour de 2015-2016 dans les moyennes agrégées ; les deux séries progressent de façon relativement régulière. Le taux de pauvreté fluctue dans une bande assez étroite pour les deux groupes (QPV : 41,7-45,1% ; contrôle : 26,7-28%) sans divergence flagrante. **Ceci reste une lecture purement descriptive de moyennes agrégées — ne remplace pas la régression event-study à faire.**
+
+Prochaine étape : spécifier et estimer la régression event-study (effets fixes + interaction traitement × année).
