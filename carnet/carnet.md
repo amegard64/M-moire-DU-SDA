@@ -188,3 +188,20 @@ Trois niveaux à citer dans le mémoire (revue de littérature méthodologique) 
 3. **Rathelot, R. & Sillard, P. (2008)**, "Zones Franches Urbaines : quels effets sur l'emploi salarié et les créations d'établissements ?", Économie et Statistique n°415-416 ; et **Givord, Rathelot & Sillard (2011/2013)**, "Place-based tax exemptions and displacement effects", Regional Science and Urban Economics — application quasi-identique en France sur les ZFU (ancêtre méthodologique des QPV), utilisant explicitement un groupe de contrôle apparié pour cette même raison.
 
 Point clé pour la rédaction : le mécanisme de base (1) est une quasi-loi statistique ; son ampleur dans un contexte donné reste une question empirique (2 et 3), ce qui justifie la stratégie d'appariement retenue plutôt qu'une simple affirmation de principe.
+
+## 22. Découverte majeure (apportée par Alexandre) : ruptures méthodologiques Filosofi documentées, coïncidant avec les années significatives
+
+L'INSEE documente explicitement, pour chaque millésime, des changements de législation/qualité de source qui affectent la comparabilité. Deux notes trouvées et très pertinentes :
+
+**2018** : réforme du loyer de solidarité (RLS) — comptabilise la baisse des APL sans la baisse de loyer compensatoire, **ne touche que le logement social**. Dégradation du fichier taxe d'habitation la même année, avec sortie du champ des ménages aux revenus modestes en particulier.
+
+**2019** : primes exceptionnelles et heures supplémentaires exonérées non captées par Filosofi (écart de +2,6% vs -0,2% entre ERFS et Filosofi sur le niveau de vie médian national) — touchent surtout "ouvriers, employés". Prime d'activité élargie. Amélioration (partielle compensation) du fichier taxe d'habitation cette année-là contrairement à 2018.
+
+**Avertissement général INSEE, répété sur presque chaque millésime** : "il est déconseillé d'utiliser deux millésimes consécutifs pour mesurer des évolutions."
+
+**Implication pour nos résultats** : les années où la régression event-study trouve un écart significatif (2016, 2018, 2021) incluent au moins deux (2018 documenté ci-dessus, 2021 déjà documenté pour le Covid) qui coïncident avec des ruptures de mesure connues, touchant potentiellement de façon disproportionnée les caractéristiques surreprésentées en QPV (logement social notamment pour la RLS 2018). **Ça affaiblit sérieusement l'interprétation causale du résultat sur le taux de pauvreté** — une partie substantielle pourrait être un artefact de mesure plutôt qu'un effet réel de la politique.
+
+**À faire avant toute conclusion** :
+- Vérifier si 2016 a une explication méthodologique documentée similaire (pas encore recherché)
+- Envisager une spécification alternative excluant les années à rupture documentée (2018, 2021), ne gardant que 2016, 2017, 2019 comme post-traitement "propre"
+- Mentionner explicitement cette limite dans le mémoire, avec citation des notes méthodologiques INSEE par millésime
