@@ -224,3 +224,11 @@ Données RPLS 2022 (nombre de logements sociaux, `nbLsPls`), comparées sur notr
 Limite technique : RPLS donne un compte absolu de logements sociaux, pas une part rapportée au nombre total de logements du quartier (donnée non disponible dans ce fichier) — comparaison en niveau, pas en proportion, mais l'écart est large (×2 à ×2,6) donc conclusion peu sensible à ce détail.
 
 Décision : ajouter le nombre de logements sociaux (RPLS 2022) comme variable de contrôle dans la régression, en plus de documenter l'écart dans les limites.
+
+## 25. Régression avec contrôle logement social × année : résultat nuancé
+
+Ajout d'interactions logement_social(standardisé)×année en plus de traité×année. Effet : tous les coefficients traité×année rétrécissent (17% à 46% selon année/variable), confirmant que le logement social explique une partie du signal. Mais le taux de pauvreté reste significatif sur 2016/2018/2021 même après contrôle (0,32/0,60/0,73 points, tous p<0.01). Le revenu devient non significatif ou marginal partout après contrôle.
+
+**Interprétation à retenir pour le mémoire** : résultat nuancé, pas un "tout s'explique" ni un "rien ne change". Le logement social explique une partie de la divergence observée (surtout côté revenu), mais un écart résiduel robuste subsiste sur le taux de pauvreté, dont l'origine (vrai effet ? autre facteur non contrôlé ?) reste ouverte. À présenter comme tel, avec honnêteté, plutôt que de trancher artificiellement.
+
+Prochaines pistes possibles, non tranchées : chercher d'autres variables de composition (catégorie socio-professionnelle, pour tester la piste PEPA/heures sup 2019-2021) ; ou accepter ce résultat nuancé comme conclusion du mémoire avec limites bien posées.
