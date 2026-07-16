@@ -211,3 +211,16 @@ L'INSEE documente explicitement, pour chaque millésime, des changements de lég
 Contrairement à 2018/2019/2021, la documentation INSEE 2016 ne mentionne que la mise en garde générique standard, sans changement législatif ou de qualité de source spécifique. 2016 reste donc un résultat significatif sans explication de mesure identifiée — à traiter différemment de 2018/2021 dans la discussion des limites (peut-être un vrai signal précoce, peut-être un résultat significatif par hasard sur plusieurs tests, à ne pas trancher prématurément).
 
 Prochaine étape décidée : réestimer la régression event-study en excluant 2018 et 2021 (ruptures documentées confirmées), pour isoler ce qui reste de 2016/2017/2019 seuls.
+
+## 24. Vérification confirmée : les QPV ont bien plus de logement social que leurs contrôles appariés
+
+Données RPLS 2022 (nombre de logements sociaux, `nbLsPls`), comparées sur notre échantillon apparié exact (1246 QPV, 2818 IRIS de contrôle) :
+- Moyenne : 1166 logements sociaux (QPV) vs 445 (contrôle) — ratio ×2,6
+- Médiane : 734 vs 397 — ratio ×1,85
+- 96,7% des QPV ont ≥100 logements sociaux, contre 85,4% des contrôles
+
+**Confirme empiriquement, sur notre propre échantillon (pas une statistique nationale générique), l'hypothèse avancée pour expliquer une partie du résultat 2018** (réforme RLS touchant spécifiquement le logement social). Renforce la prudence nécessaire sur l'interprétation causale des coefficients significatifs.
+
+Limite technique : RPLS donne un compte absolu de logements sociaux, pas une part rapportée au nombre total de logements du quartier (donnée non disponible dans ce fichier) — comparaison en niveau, pas en proportion, mais l'écart est large (×2 à ×2,6) donc conclusion peu sensible à ce détail.
+
+Décision : ajouter le nombre de logements sociaux (RPLS 2022) comme variable de contrôle dans la régression, en plus de documenter l'écart dans les limites.
