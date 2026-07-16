@@ -205,3 +205,9 @@ L'INSEE documente explicitement, pour chaque millésime, des changements de lég
 - Vérifier si 2016 a une explication méthodologique documentée similaire (pas encore recherché)
 - Envisager une spécification alternative excluant les années à rupture documentée (2018, 2021), ne gardant que 2016, 2017, 2019 comme post-traitement "propre"
 - Mentionner explicitement cette limite dans le mémoire, avec citation des notes méthodologiques INSEE par millésime
+
+## 23. Vérification 2016 : pas de rupture méthodologique spécifique documentée
+
+Contrairement à 2018/2019/2021, la documentation INSEE 2016 ne mentionne que la mise en garde générique standard, sans changement législatif ou de qualité de source spécifique. 2016 reste donc un résultat significatif sans explication de mesure identifiée — à traiter différemment de 2018/2021 dans la discussion des limites (peut-être un vrai signal précoce, peut-être un résultat significatif par hasard sur plusieurs tests, à ne pas trancher prématurément).
+
+Prochaine étape décidée : réestimer la régression event-study en excluant 2018 et 2021 (ruptures documentées confirmées), pour isoler ce qui reste de 2016/2017/2019 seuls.
