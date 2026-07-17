@@ -85,8 +85,6 @@ Correction d'un choix pris trop vite : pour vérifier les tendances parallèles 
 
 
 
-## 6. Décisions en attente / à trancher
-
 ## 10. Décision : périmètre restreint à la France métropolitaine
 
 Décision prise avec Alexandre : on exclut les DOM-TOM (Guadeloupe, Martinique, Guyane, Réunion, Mayotte, Polynésie, Saint-Martin) du champ de l'analyse. Justifications :
@@ -121,11 +119,6 @@ Premier essai de filtrage DOM-TOM sur le panel 2013 basé sur une colonne "reg" 
 
 On a maintenant les deux côtés (QPV traité + IRIS contrôle) pour 2012, 2013, 2014, et 2021. Prochaine étape réelle : finaliser la construction du groupe de contrôle (exclusion par nom + appariement sur pauvreté pré-traitement, en utilisant maintenant les vraies données 2012-2014), puis produire le graphique de vérification des tendances parallèles.
 
-
-
-- Seuil de proximité pour l'appariement sur pauvreté pré-traitement (ex. ± X points de taux de pauvreté, ou méthode de matching plus formelle ?)
-- Périmètre exact de communes de comparaison (seuil de population à fixer sur toute la période)
-- Composition exacte du volet ML "typologie" : quelles variables du fichier socio 2012-2014 (et/ou du thème Démographie 2017+) retenir précisément
 ## 16. Décisions en attente / à trancher
 
 - Seuil de proximité pour l'appariement sur pauvreté pré-traitement (ex. ± X points de taux de pauvreté, ou méthode de matching plus formelle ?)
