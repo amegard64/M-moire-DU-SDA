@@ -85,8 +85,6 @@ Correction d'un choix pris trop vite : pour vérifier les tendances parallèles 
 
 
 
-## 6. Décisions en attente / à trancher
-
 ## 10. Décision : périmètre restreint à la France métropolitaine
 
 Décision prise avec Alexandre : on exclut les DOM-TOM (Guadeloupe, Martinique, Guyane, Réunion, Mayotte, Polynésie, Saint-Martin) du champ de l'analyse. Justifications :
@@ -114,6 +112,7 @@ Premier essai de filtrage DOM-TOM sur le panel 2013 basé sur une colonne "reg" 
 - La position de la ligne d'en-tête technique varie d'un fichier à l'autre (ligne 5 pour certains, 6 ou 8 pour d'autres) — détection automatique mise en place plutôt que position fixe, pour éviter une erreur silencieuse.
 - Noms de feuilles Excel légèrement différents selon les années ("Données quartier" vs "Données quartiers" vs "Donnees quartier" sans accent) — encore un signe qu'il ne faut jamais rien supposer stable d'un millésime à l'autre.
 - **2012 n'a ni Gini ni S80/S20** (ni QPV ni IRIS) — seules médiane et taux de pauvreté sont exploitables sur toute la période 2012-2021 sans trou.
+- **Correction (vérifié en reconstruisant le pipeline, session du 2026-07-17)** : l'affirmation ci-dessus "Aucune valeur manquante sur ces deux variables" est fausse pour le taux de pauvreté IRIS. Environ 23-25% des IRIS ont un taux de pauvreté manquant (secret statistique) sur 2012 (24,3%), 2013 (24,6%) et 2014 (23,0%) — un taux quasi identique à celui documenté en 2016-2019 (section 19, ~23%). Seule `revenu_median` est ~0% manquant sur 2012-2014. Ceci ne remet pas en cause les résultats déjà produits (le calcul de la pauvreté pré-traitement et la régression event-study ignorent correctement les valeurs manquantes via une moyenne qui les exclut), mais la phrase originale ne doit pas être reprise telle quelle dans le mémoire.
 - Le fichier IRIS 2012 a une structure différente (colonnes de dénombrement en plus, présentation par déciles directe) mais les noms techniques des variables clés (`DISP_MED12`, `DISP_TP6012`) restent cohérents avec les autres années — confirmé en vérifiant l'en-tête technique, pas la présentation visuelle.
 - Légère précision décimale inhabituelle sur certaines valeurs IRIS (plusieurs chiffres après la virgule) — probablement juste la précision brute du fichier source sous-jacente à l'arrondi affiché ailleurs par l'INSEE, pas une anomalie identifiée à ce stade.
 
@@ -121,11 +120,6 @@ Premier essai de filtrage DOM-TOM sur le panel 2013 basé sur une colonne "reg" 
 
 On a maintenant les deux côtés (QPV traité + IRIS contrôle) pour 2012, 2013, 2014, et 2021. Prochaine étape réelle : finaliser la construction du groupe de contrôle (exclusion par nom + appariement sur pauvreté pré-traitement, en utilisant maintenant les vraies données 2012-2014), puis produire le graphique de vérification des tendances parallèles.
 
-
-
-- Seuil de proximité pour l'appariement sur pauvreté pré-traitement (ex. ± X points de taux de pauvreté, ou méthode de matching plus formelle ?)
-- Périmètre exact de communes de comparaison (seuil de population à fixer sur toute la période)
-- Composition exacte du volet ML "typologie" : quelles variables du fichier socio 2012-2014 (et/ou du thème Démographie 2017+) retenir précisément
 ## 16. Décisions en attente / à trancher
 
 - Seuil de proximité pour l'appariement sur pauvreté pré-traitement (ex. ± X points de taux de pauvreté, ou méthode de matching plus formelle ?)
