@@ -349,3 +349,17 @@ Résultat : **l'écart de pauvreté est plus FAIBLE et moins systématique dans 
 **Piste alternative non vérifiée** : les QPV à forte baisse de population pourraient être ceux ayant bénéficié de programmes de rénovation urbaine (PNRU, démolitions + diversification du parc), ce qui améliorerait leur trajectoire plutôt que de la dégrader — cohérent avec l'exemple de Pleyel (Institut Paris Region). Nécessiterait une donnée sur les programmes ANRU/PNRU par QPV pour être testée, non mobilisée dans ce mémoire faute de temps/données.
 
 Fichiers : `qpv_evolution_population.csv`, `iris_evolution_population.csv`.
+
+## 37. Reconstruction du script d'appariement manquant (03_controle_iris_miroirs.py complété)
+
+Ménage du dépôt : plusieurs fichiers `data/processed/` étaient des sorties orphelines d'un pipeline antérieur (scripts 06/07 disparus, versions `v1` remplacées par leurs `v2`) — supprimés. Mais quatre fichiers (`iris_controle_candidats.csv`, `qpv_pauvrete_pretraitement.csv`, `iris_pauvrete_pretraitement.csv`, `commune_vers_unite_urbaine.csv`) n'étaient reproduits par AUCUN script présent dans le dépôt : `03_controle_iris_miroirs.py` ne contenait que des définitions de fonctions, jamais exécutées de bout en bout.
+
+**Reconstruction et vérification** (script complété, voir `scripts/03_controle_iris_miroirs.py`) :
+- Découverte en reconstruisant l'exclusion des IRIS "miroirs" : la comparaison de nom doit se faire sur le nom **propre de l'IRIS**, pas sur le nom de sa commune (`libcom` dans `panel_iris_complet_v2.csv`, identique pour tous les IRIS d'une même commune — inutilisable). Le vrai nom de chaque IRIS (`LibGeo`) se trouve dans `rpls_iris.csv`. Une fois ce champ utilisé, reproduction exacte de `iris_controle_candidats.csv` (8380/8380), avec la règle qu'un IRIS sans entrée RPLS (15 cas) est exclu par prudence.
+- `qpv_pauvrete_pretraitement.csv` et `iris_pauvrete_pretraitement.csv` : reproduits à l'identique (précision flottante), y compris le motif exact des valeurs manquantes (secret statistique, 985/7328 IRIS).
+- `appariement_qpv_iris_v2.csv` : reproduit à l'identique une fois compris que l'algorithme K plus proches voisins ne doit PAS écarter au préalable les IRIS à pauvreté masquée — ils restent inclus (avec distance vide) quand une commune/UU a moins de 5 candidats à distance connue, exactement comme dans le fichier existant (184 lignes de ce type).
+- `commune_vers_unite_urbaine.csv` : ce n'est pas une sortie du pipeline mais une table de référence externe (nomenclature INSEE, section 17) — conservée telle quelle, non régénérée.
+
+**Fausse alerte en cours de route** : une première vérification (bug de comparaison de ma part - un test tautologique masquait le motif réel de valeurs manquantes) avait fait croire à un vrai trou de données sur 985 IRIS. Revérification directe sur le fichier committé : confirmé qu'il s'agissait bien de valeurs manquantes des deux côtés (secret statistique), pas d'un écart. Leçon retenue : toujours comparer les valeurs elles-mêmes, pas seulement la présence de la clé.
+
+**Suite au ménage** : `iris_controle_candidats.csv`, `qpv_pauvrete_pretraitement.csv`, `iris_pauvrete_pretraitement.csv` supprimés (regénérables par `03_controle_iris_miroirs.py`). `commune_vers_unite_urbaine.csv` et `appariement_qpv_iris_v2.csv` conservés committés (le premier comme donnée de référence externe, le second comme entrée directe déjà lue par `04_regression_event_study.py`/`05_tests_robustesse.py`).
