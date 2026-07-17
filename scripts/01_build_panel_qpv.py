@@ -56,62 +56,12 @@ def lire_xlsx_2021(fichier, feuille='Données quartiers'):
     return df
 
 
-def lire_xlsx_intelligent(fichier):
-    """Lit un fichier .xlsx (2017-2019) en détectant automatiquement la feuille
-    et la ligne d'en-tête technique, sans supposer un nom de feuille ou une
-    position de ligne stables (voir carnet section 14 : noms de feuille et
-    positions d'en-tête varient d'un millésime à l'autre)."""
-    wb = openpyxl.load_workbook(fichier, data_only=True)
-    feuille = max(wb.sheetnames, key=lambda s: wb[s].max_row)
-    ws = wb[feuille]
-    ligne_header = None
-    for i, row in enumerate(ws.iter_rows(min_row=1, max_row=15, values_only=True)):
-        val = str(row[0]).strip().upper() if row[0] is not None else ''
-        if val in ('QP', 'CODGEO', 'IRIS'):
-            ligne_header = i + 1
-            break
-    if ligne_header is None:
-        raise ValueError(f"En-tête non trouvé dans {fichier} (feuille {feuille})")
-    data = list(ws.iter_rows(min_row=ligne_header, values_only=True))
-    df = pd.DataFrame(data[1:], columns=data[0])
-    code_col = data[0][0]
-    df = df[df[code_col].notna()].copy()
-    df['code'] = df[code_col].astype(str).str.upper()
-    return df
-
-
-def cherche_colonne(colonnes, motifs, yy):
-    """Cherche une colonne parmi plusieurs motifs possibles (insensible à la
-    casse), car le nom technique change de convention selon les millésimes
-    (ex. DISP_Q2_A17 devient DISP_MED_A18 - la médiane change de nom, pas
-    seulement de casse). Échoue explicitement plutôt que de deviner en
-    silence si aucun motif ne correspond (voir carnet : "ne jamais supposer
-    une correspondance directe de nom de colonne entre deux millésimes")."""
-    cibles = {m.format(yy=yy).lower() for m in motifs}
-    for c in colonnes:
-        if c.lower() in cibles:
-            return c
-    return None
-
-
 def extraire_variables_qpv(annee, dossier_donnees='data/raw'):
     """Extrait revenu_median, taux_pauvrete, gini, s80s20 pour une année donnée.
     Gère les changements de nom de colonne et de fichier source selon le millésime :
     - 2012-2014 : médiane/gini dans le fichier 'revenu disponible', taux de
       pauvreté dans le fichier 'socio' séparé
-    - 2016-2019 : taux de pauvreté déjà dans le fichier 'revenu disponible'
-      (bascule entre 2014 et 2016, voir carnet section 19) ; 2016 en .xls,
-      2017-2019 en .xlsx ; nom ET casse de la colonne médiane changent
-      entre 2017 (disp_q2_a17) et 2018 (DISP_MED_A18)
     - 2021+ : tout dans le fichier 'revenu disponible', colonnes en majuscules
-
-    NOTE : la branche 2016-2019 ci-dessous a été reconstruite à partir des
-    observations consignées dans le carnet (section 19), faute de disposer
-    des fichiers bruts dans cet environnement pour la tester directement
-    (data/raw n'est pas versionné). À vérifier en la faisant tourner sur les
-    fichiers réels avant de lui faire confiance : le résultat attendu est
-    1296 QPV pour chacune des années 2016 à 2019 (cf. panel_qpv_2016_2019.csv
-    déjà produit et commité).
     """
     yy = str(annee)[2:]
     dossier = f"{dossier_donnees}/qpv_{annee}"
@@ -136,23 +86,6 @@ def extraire_variables_qpv(annee, dossier_donnees='data/raw'):
         soc_slim.columns = ['code', 'taux_pauvrete']
 
         panel = rev_slim.merge(soc_slim, on='code', how='outer')
-    elif annee <= 2019:
-        motif = f'{dossier}/*disponible*{annee}*.xls'
-        f_rev = glob.glob(motif)[0] if glob.glob(motif) else glob.glob(f'{dossier}/*disponible*{annee}*.xlsx')[0]
-        rev = lire_xls_intelligent(f_rev) if f_rev.endswith('.xls') else lire_xlsx_intelligent(f_rev)
-
-        med_col = cherche_colonne(rev.columns, ['disp_med_a{yy}', 'disp_q2_a{yy}', 'disp_med{yy}'], yy)
-        tp60_col = cherche_colonne(rev.columns, ['disp_tp60_a{yy}', 'disp_tp60{yy}'], yy)
-        gini_col = cherche_colonne(rev.columns, ['disp_gi_a{yy}', 'disp_gini_a{yy}'], yy)
-        s80s20_col = cherche_colonne(rev.columns, ['disp_s80s20_a{yy}'], yy)
-        for nom, col in [('médiane', med_col), ('taux de pauvreté', tp60_col)]:
-            if col is None:
-                raise ValueError(f"Colonne {nom} introuvable pour {annee} dans {f_rev} "
-                                  f"— vérifier la convention de nommage réelle du fichier")
-
-        panel = rev[['code', med_col, tp60_col] + [c for c in [gini_col, s80s20_col] if c]].copy()
-        panel.columns = ['code', 'revenu_median', 'taux_pauvrete'] + \
-            [n for n, c in [('gini', gini_col), ('s80s20', s80s20_col)] if c]
     else:
         f_rev = glob.glob(f'{dossier}/*disponible*{annee}*.xlsx')[0]
         rev = lire_xlsx_2021(f_rev)
@@ -166,8 +99,8 @@ def extraire_variables_qpv(annee, dossier_donnees='data/raw'):
 
 
 if __name__ == '__main__':
-    annees_disponibles = [2012, 2013, 2014, 2016, 2017, 2018, 2019, 2021]  # 2015 et 2020 exclus, voir carnet
+    annees_disponibles = [2012, 2013, 2014, 2021]  # à étendre au fur et à mesure
     panels = [extraire_variables_qpv(a) for a in annees_disponibles]
     panel_complet = pd.concat(panels, ignore_index=True)
-    panel_complet.to_csv('data/processed/panel_qpv_complet.csv', index=False)
+    panel_complet.to_csv('data/processed/panel_qpv.csv', index=False)
     print(f"Panel QPV construit : {len(panel_complet)} lignes, années {annees_disponibles}")

@@ -85,6 +85,8 @@ Correction d'un choix pris trop vite : pour vérifier les tendances parallèles 
 
 
 
+## 6. Décisions en attente / à trancher
+
 ## 10. Décision : périmètre restreint à la France métropolitaine
 
 Décision prise avec Alexandre : on exclut les DOM-TOM (Guadeloupe, Martinique, Guyane, Réunion, Mayotte, Polynésie, Saint-Martin) du champ de l'analyse. Justifications :
@@ -112,7 +114,6 @@ Premier essai de filtrage DOM-TOM sur le panel 2013 basé sur une colonne "reg" 
 - La position de la ligne d'en-tête technique varie d'un fichier à l'autre (ligne 5 pour certains, 6 ou 8 pour d'autres) — détection automatique mise en place plutôt que position fixe, pour éviter une erreur silencieuse.
 - Noms de feuilles Excel légèrement différents selon les années ("Données quartier" vs "Données quartiers" vs "Donnees quartier" sans accent) — encore un signe qu'il ne faut jamais rien supposer stable d'un millésime à l'autre.
 - **2012 n'a ni Gini ni S80/S20** (ni QPV ni IRIS) — seules médiane et taux de pauvreté sont exploitables sur toute la période 2012-2021 sans trou.
-- **Correction (vérifié en reconstruisant le pipeline, session du 2026-07-17)** : l'affirmation ci-dessus "Aucune valeur manquante sur ces deux variables" est fausse pour le taux de pauvreté IRIS. Environ 23-25% des IRIS ont un taux de pauvreté manquant (secret statistique) sur 2012 (24,3%), 2013 (24,6%) et 2014 (23,0%) — un taux quasi identique à celui documenté en 2016-2019 (section 19, ~23%). Seule `revenu_median` est ~0% manquant sur 2012-2014. Ceci ne remet pas en cause les résultats déjà produits (le calcul de la pauvreté pré-traitement et la régression event-study ignorent correctement les valeurs manquantes via une moyenne qui les exclut), mais la phrase originale ne doit pas être reprise telle quelle dans le mémoire.
 - Le fichier IRIS 2012 a une structure différente (colonnes de dénombrement en plus, présentation par déciles directe) mais les noms techniques des variables clés (`DISP_MED12`, `DISP_TP6012`) restent cohérents avec les autres années — confirmé en vérifiant l'en-tête technique, pas la présentation visuelle.
 - Légère précision décimale inhabituelle sur certaines valeurs IRIS (plusieurs chiffres après la virgule) — probablement juste la précision brute du fichier source sous-jacente à l'arrondi affiché ailleurs par l'INSEE, pas une anomalie identifiée à ce stade.
 
@@ -120,6 +121,11 @@ Premier essai de filtrage DOM-TOM sur le panel 2013 basé sur une colonne "reg" 
 
 On a maintenant les deux côtés (QPV traité + IRIS contrôle) pour 2012, 2013, 2014, et 2021. Prochaine étape réelle : finaliser la construction du groupe de contrôle (exclusion par nom + appariement sur pauvreté pré-traitement, en utilisant maintenant les vraies données 2012-2014), puis produire le graphique de vérification des tendances parallèles.
 
+
+
+- Seuil de proximité pour l'appariement sur pauvreté pré-traitement (ex. ± X points de taux de pauvreté, ou méthode de matching plus formelle ?)
+- Périmètre exact de communes de comparaison (seuil de population à fixer sur toute la période)
+- Composition exacte du volet ML "typologie" : quelles variables du fichier socio 2012-2014 (et/ou du thème Démographie 2017+) retenir précisément
 ## 16. Décisions en attente / à trancher
 
 - Seuil de proximité pour l'appariement sur pauvreté pré-traitement (ex. ± X points de taux de pauvreté, ou méthode de matching plus formelle ?)
@@ -226,3 +232,127 @@ Ajout d'interactions logement_social(standardisé)×année en plus de traité×a
 **Interprétation à retenir pour le mémoire** : résultat nuancé, pas un "tout s'explique" ni un "rien ne change". Le logement social explique une partie de la divergence observée (surtout côté revenu), mais un écart résiduel robuste subsiste sur le taux de pauvreté, dont l'origine (vrai effet ? autre facteur non contrôlé ?) reste ouverte. À présenter comme tel, avec honnêteté, plutôt que de trancher artificiellement.
 
 Prochaines pistes possibles, non tranchées : chercher d'autres variables de composition (catégorie socio-professionnelle, pour tester la piste PEPA/heures sup 2019-2021) ; ou accepter ce résultat nuancé comme conclusion du mémoire avec limites bien posées.
+
+## 26. Tests de robustesse effectués : 2016 émerge comme le résultat le plus solide
+
+**Test 1 — sous-échantillon à appariement serré** (528/1246 QPV, distance pré-traitement ≤10 points) : résultat pauvreté globalement similaire (2016, 2018 significatifs, magnitude proche), MAIS le coefficient 2012 (pré-traitement) devient limite significatif (0,29, p=0,053) — affaiblit la confiance dans la tendance parallèle pour CE sous-échantillon spécifiquement. Revenu : pattern plus cohérent (tous négatifs) mais aucun significatif à 5%.
+
+**Test 2 — exclusion de 2018 et 2021** (ruptures documentées) : 2016 reste quasi inchangé et significatif (pauvreté 0,438 p<0,001 ; revenu -0,0028 p=0,004) sur les deux variables. Confirme que 2016 n'est PAS un artefact de la présence de 2018/2021 dans la spécification.
+
+**Synthèse à ce stade** : 2016 est le résultat le plus robuste de toute la série de tests (résiste à l'appariement serré, à l'exclusion des années suspectes, et partiellement au contrôle logement social — seule année où le signal ne s'effondre jamais). C'est aussi la seule année sans explication méthodologique documentée trouvée à ce jour. **Priorité identifiée : comprendre 2016 spécifiquement**, plutôt que de continuer à consolider 2018/2021 (déjà bien expliqués) ou 2019 (jamais significatif).
+
+Prochaine étape à décider avec Alexandre : chercher activement une explication (documentation INSEE plus fine sur 2016, ou caractéristique spécifique des QPV/communes concernées cette année-là), ou accepter 2016 comme un résultat robuste mais dont la cause reste ouverte, à documenter comme telle dans le mémoire.
+
+## 27. Limite non traitée jusqu'ici, identifiée via une consultation externe (Gemini) : renouvellement de population
+
+Point valide non anticipé : nos données (Filosofi, niveau quartier) mesurent le lieu, pas les personnes. Si le classement QPV fonctionne et qu'un ménage s'enrichit, il peut déménager hors du quartier (mobilité résidentielle ascendante), remplacé par un ménage plus pauvre. Le quartier peut alors ne montrer "aucun effet" agrégé alors que des trajectoires individuelles se seraient améliorées. Limite réelle de toute analyse à l'échelle géographique (pas individuelle) avec ce type de source — à mentionner explicitement dans les limites du mémoire. Rappel connexe : l'étude ONPV trouvée en tout début de conversation notait déjà que "ceux qui s'installent [en QPV] sont plus pauvres que ceux qui partent" — cohérent avec ce mécanisme.
+
+Idée à garder pour le volet ML/hétérogénéité (non retenue pour l'instant, piste future) : croiser avec l'intensité des financements ANRU (rénovation urbaine) par QPV, pour tester si l'hétérogénéité de l'effet est liée à l'ampleur des investissements plutôt qu'au seul classement.
+
+Point d'attention méthodologique confirmé (déjà connu, re-signalé en creusant une source externe) : le classement QPV a fait l'objet d'ajustements politiques locaux après l'identification statistique — ce qui rend une RDD (Régression sur Discontinuité) fragile pour ce sujet, en plus d'être hors du cadre des cours suivis. Décision : ne pas mobiliser la RDD.
+
+## 28. CORRECTION IMPORTANTE : une rupture documentée existe bien pour 2016
+
+Contrairement à ce qui était noté en section 23 ("pas de rupture méthodologique spécifique documentée pour 2016"), une recherche plus poussée révèle que le millésime 2016 correspond à une **réorganisation majeure du système de production des indicateurs QPV** :
+- Le taux de pauvreté est déplacé vers la table "revenu disponible" (déjà connu)
+- **3 indicateurs socio-démographiques retirés de Filosofi**, remplacés par une nouvelle source (Recensement/Estimations démographiques) — exactement la bascule qu'Alexandre avait pressentie plus tôt dans la conversation
+- 1 indicateur (part ménages dépendant des indemnités chômage) **supprimé purement et simplement**, secret statistique masquant >50% des QPV
+
+**Ça change la lecture de la section 23 et 26** : 2016 n'est PAS sans explication documentée — c'est au contraire l'année de la plus grosse réorganisation méthodologique de toute la série 2012-2021. Le résultat robuste qu'on observe cette année-là pourrait donc, comme 2018/2021, être en bonne partie lié à cette rupture de production des données plutôt qu'à un vrai effet causal. À vérifier plus avant, mais la piste "artefact de mesure" reprend de la force sur 2016 aussi.
+
+## 29. Décision : ajouter 2015 et 2020 pour compléter le graphique event-study sans aucun trou
+
+Liens confirmés :
+- QPV 2015 : `insee.fr/fr/statistiques/4200153?sommaire=2500477`
+- IRIS 2015 : `insee.fr/fr/statistiques/4217503`
+- QPV 2020 : `insee.fr/fr/statistiques/7231733?sommaire=2500477`
+- IRIS 2020 : `insee.fr/fr/statistiques/7233950`
+
+Objectif : obtenir la version complète (2012-2021, dix années sans trou) du graphique event-study, qui reste le livrable central de cette partie du mémoire.
+
+## 30. Régression complète à 10 ans (2012-2021, sans trou) : deux découvertes majeures
+
+**2015 est significatif**, dans le même sens et proche en magnitude que 2016 (pauvreté +0,41 vs +0,44 ; revenu -0,0048 vs -0,0028). Piste à retenir : la doc INSEE précise que "les données 2015 sont proposées dans la géographie en vigueur au 1er janvier 2016" — indice possible d'un chevauchement méthodologique entre les deux millésimes, cohérent avec la découverte de la section 28 (réorganisation Filosofi/Recensement autour de 2016).
+
+**2020 et 2021 ont des signes OPPOSÉS, tous deux significatifs** (pauvreté : -0,45 en 2020 contre +0,92 en 2021 ; revenu : +0,0075 en 2020 contre -0,0052 en 2021). Aucun mécanisme de politique publique plausible n'inverserait un effet en une seule année. C'est la preuve la plus concrète que 2020-2021 sont dominés par du bruit de mesure (Covid), confirmant empiriquement ce qu'on supposait depuis le début à partir de la documentation seule.
+
+**Lecture d'ensemble à ce stade** : le signal le plus digne d'intérêt est la paire 2015-2016 (concordante, au moment précis du classement) ; 2018 reste isolé et déjà expliqué (RLS/logement social) ; 2020-2021 s'invalident mutuellement par leur incohérence de signe.
+
+Fichiers : `panel_qpv_complet_v2.csv`, `panel_iris_complet_v2.csv`, `panel_regression_complet.csv` (10 années, aucun trou).
+
+## 31. Panel équilibré (constant sur 10 ans) : confirme l'hypothèse d'Alexandre sur la composition changeante
+
+Vérification demandée par Alexandre : le panel n'était PAS équilibré (972/1246 QPV seulement présents les 10 années ; 2021 particulièrement touché par le masquage, 980 valides contre ~1240 les autres années). Régression relancée sur le sous-ensemble strictement équilibré (3218 unités, 10 années complètes chacune).
+
+**Résultat pauvreté, nettement plus cohérent** : progression quasi continue 2015→2018 (0,44 / 0,54 / 0,22* / 0,80, tous significatifs ou proches), 2019 plus faible (0,24, p=0,08). L'alternance signif/non-signif qui semblait suspecte (section 26/30) s'explique donc en bonne partie par la composition changeante de l'échantillon non équilibré — confirmé empiriquement, pas juste supposé.
+
+**Mais nouveau problème détecté côté revenu** : sur ce panel équilibré, 2012 ET 2013 (pré-traitement) deviennent significatifs (p=0,025 chacun) — la tendance parallèle sur le revenu ne tient plus pour ce sous-ensemble précis. À documenter comme limite : le choix balanced vs unbalanced panel change la validité du design selon la variable regardée.
+
+**2020 reste incohérent avec 2021** (signe opposé) même sur ce panel équilibré — confirme que ces deux années restent à exclure de toute conclusion causale.
+
+Fichier : `panel_regression_equilibre.csv`.
+
+## 32. Référence groupée (2012-2014) et test de Wald conjoint sur la tendance parallèle
+
+**Changement de référence** : passage d'une référence unique (2014) à une référence groupée (moyenne implicite 2012-2013-2014, obtenue en omettant leurs interactions individuelles). Résultat pauvreté nettement plus lisible : progression quasi continue et significative 2015→2021 (hors 2020), magnitudes légèrement plus fortes (0,48 à 0,95).
+
+**Test de Wald conjoint** (H0 : coef(2012)=coef(2013)=0, sur la spécification à référence 2014 seule, panel équilibré) :
+- Pauvreté : statistique 3,34, p=0,188 → **H0 non rejetée**, cohérent avec tendance parallèle
+- Revenu : statistique 6,25, p=0,044 → **H0 rejetée**, tendance parallèle mise en doute formellement
+
+**Implication** : validation méthodologique asymétrique selon la variable — le résultat sur la pauvreté repose sur un design validé statistiquement (test formel, pas juste visuel), celui sur le revenu repose sur un design dont l'hypothèse de base est statistiquement rejetée. À utiliser pour hiérarchiser la confiance entre les deux résultats dans la rédaction : pauvreté > revenu en termes de crédibilité du design.
+
+Décision : ne pas mobiliser de test placebo (hors du cadre jugé confortable par Alexandre), le test de Wald conjoint (dans les cours) suffit comme validation formelle de la tendance parallèle.
+
+## 33. RESULTAT FINAL DE REFERENCE (toutes corrections combinées)
+
+Spécification définitive : panel strictement équilibré (3218 unités, 10 ans) + référence groupée 2012-2014 + contrôle logement social × année.
+
+| Année | Pauvreté (points) | Revenu (log) |
+|---|---|---|
+| 2015 | +0,33*** | -0,0047*** |
+| 2016 | +0,41*** | -0,0031* |
+| 2017 | +0,17 n.s. | +0,0004 n.s. |
+| 2018 | +0,67*** | -0,0025 n.s. |
+| 2019 | +0,15 n.s. | +0,0011 n.s. |
+| 2020 | -0,41* | +0,0061*** |
+| 2021 | +0,72*** | -0,0043* |
+
+Validation du design : Wald conjoint pré-traitement non rejeté pour pauvreté (p=0,19), rejeté pour revenu (p=0,04).
+
+**C'est la table à utiliser dans le mémoire pour la section résultats.** Conclusion à retenir : évidence robuste d'une divergence de pauvreté à partir de 2015, partiellement expliquée par des facteurs de mesure (logement social, ruptures Filosofi), non attribuable avec certitude à un effet causal pur. Résultat sur le revenu à traiter comme secondaire (tendance parallèle rejetée).
+
+## 34. Source précieuse trouvée par Alexandre : Institut Paris Region (avril 2025)
+
+Référence : Beaufils S., Joinet H., "Les quartiers en politique de la ville, reflet des évolutions de la géographie sociale francilienne", Note rapide Habitat-Société n°1034, L'Institut Paris Region, 10 avril 2025.
+
+**Apports pour le mémoire :**
+1. **Méthode de classement précisée et chiffrée** : seuil de 60% du revenu fiscal médian national pondéré par le revenu médian de l'unité urbaine, carroyage 200m, minimum 1000-1500 habitants. Confirme et complète la doc INSEE déjà citée.
+2. **Confirmation indépendante de l'ajustement politique du zonage** ("travail itératif entre élus locaux et services de l'État") — deuxième source sur ce point, renforce la décision d'écarter la RDD.
+3. **Source sérieuse et chiffrée pour la limite du renouvellement de population** (section 27, initialement soulevée via Gemini) : "l'installation de ménages aux revenus plus élevés et la baisse de la population constituent les deux principaux facteurs de sortie de la politique de la ville." Exemple chiffré : quartier Pleyel (Saint-Denis), -520 habitants et +22% de niveau de vie en 5 ans, sorti du classement en 2024. **Cette source remplace/renforce solidement la mention Gemini, à citer en priorité dans le mémoire.**
+4. **Précédent méthodologique pour le volet ML** : typologie à 4 classes de QPV construite par l'IPR à partir de 15 indicateurs socio-démographiques (limitée à l'Île-de-France, non réutilisable telle quelle mais bon précédent à citer).
+5. Confirme le rôle des dispositifs bundlés (PNRU rénovation urbaine) dans les trajectoires observées — renforce la prudence déjà actée sur l'attribution causale au seul "label" QPV.
+
+Source à intégrer dans la revue de littérature (sujet traité), qualité élevée (institut public régional reconnu, données Insee/Filosofi, publication récente).
+
+## 35. CLOTURE de la partie régression/DiD
+
+Décision prise avec Alexandre : clôturer la partie causale. Le revenu médian n'est pas supprimé mais rétrogradé en résultat secondaire (le test de Wald rejette la tendance parallèle pour cette variable, donc pas de base pour une interprétation causale) — décision méthodologique assumée et documentée, pas un simple retrait silencieux.
+
+Document de synthèse rédigé, prêt pour intégration au mémoire : `redaction/partie_regression_finale.md`. Contient : rappel du design, échantillon final, validation (tests de Wald), résultats pauvreté (principal), résultats revenu (secondaire caveaté), facteurs explicatifs quantifiés, limite transmise au ML (mobilité résidentielle), conclusion rédigée.
+
+**Statut : partie régression/DiD CLOTUREE.** Prochaine étape : volet ML.
+
+## 36. Test de l'hypothèse "mobilité résidentielle/fuite des enrichis" : REJETÉE, résultat inverse trouvé
+
+Données population QPV (2013, 2018) et IRIS de contrôle (recensement, mêmes années) récupérées et traitées. Évolution moyenne : QPV -0,49% (médiane -1,42%), IRIS de contrôle +1,17% — confirme la baisse de population des QPV en moyenne, cohérent avec la littérature (Institut Paris Region).
+
+**Test direct** : échantillon scindé en deux (médiane de l'évolution de population QPV), régression event-study réestimée séparément dans chaque sous-groupe.
+
+Résultat : **l'écart de pauvreté est plus FAIBLE et moins systématique dans les QPV à forte baisse de population** (2019 non significatif, 2020 fortement négatif), et **plus FORT et plus systématique dans les QPV à population stable/en hausse** (2017 et 2019 deviennent significatifs, 2021 presque doublé : 1,29 contre 0,60).
+
+**C'est l'inverse de l'hypothèse testée.** Si la fuite des ménages enrichis expliquait le résultat, l'écart aurait dû être plus fort là où la population baisse. Hypothèse non confirmée par les données, à documenter comme telle (rejet honnête, pas contournement).
+
+**Piste alternative non vérifiée** : les QPV à forte baisse de population pourraient être ceux ayant bénéficié de programmes de rénovation urbaine (PNRU, démolitions + diversification du parc), ce qui améliorerait leur trajectoire plutôt que de la dégrader — cohérent avec l'exemple de Pleyel (Institut Paris Region). Nécessiterait une donnée sur les programmes ANRU/PNRU par QPV pour être testée, non mobilisée dans ce mémoire faute de temps/données.
+
+Fichiers : `qpv_evolution_population.csv`, `iris_evolution_population.csv`.
