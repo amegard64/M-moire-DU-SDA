@@ -4,3 +4,8 @@ data/raw/
 *.zip
 __pycache__/
 *.pyc
+
+# Exception : fichier démographie QPV 2010 léger (788 Ko), copié tel quel
+# depuis data/raw/ - nécessaire pour rejouer les chantiers 4 et 5 (score de
+# propension, balayage démographique) depuis le seul dépôt Git.
+!data/processed/demographie_2010_qpv.xls
