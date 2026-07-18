@@ -363,3 +363,114 @@ Ménage du dépôt : plusieurs fichiers `data/processed/` étaient des sorties o
 **Fausse alerte en cours de route** : une première vérification (bug de comparaison de ma part - un test tautologique masquait le motif réel de valeurs manquantes) avait fait croire à un vrai trou de données sur 985 IRIS. Revérification directe sur le fichier committé : confirmé qu'il s'agissait bien de valeurs manquantes des deux côtés (secret statistique), pas d'un écart. Leçon retenue : toujours comparer les valeurs elles-mêmes, pas seulement la présence de la clé.
 
 **Suite au ménage** : `iris_controle_candidats.csv`, `qpv_pauvrete_pretraitement.csv`, `iris_pauvrete_pretraitement.csv` supprimés (regénérables par `03_controle_iris_miroirs.py`). `commune_vers_unite_urbaine.csv` et `appariement_qpv_iris_v2.csv` conservés committés (le premier comme donnée de référence externe, le second comme entrée directe déjà lue par `04_regression_event_study.py`/`05_tests_robustesse.py`).
+
+## 38. Inventaire consolidé de toutes les limites de la partie régression
+
+Suite à une discussion approfondie sur ce que le DiD peut/ne peut pas garantir, un inventaire complet de toutes les limites, compromis et problèmes a été dressé et rédigé dans `redaction/limites_consolidees.md`. Six catégories : contraintes de données non choisies, compromis d'appariement, limite structurelle du DiD (tendance parallèle protège seulement contre une divergence pré-existante, pas contre un choc post-traitement qui active une différence de composition anodine), ruptures de mesure identifiées, résultats de validation et leurs failles (Wald, panel équilibré), non résolu assumé comme tel.
+
+Discussion clé ayant mené à cet inventaire : le DiD ne "retire" pas automatiquement tout ce qui touche les deux groupes différemment — seulement ce qui les touche également. Un facteur de confusion qui interagit avec un choc précis (logement social × RLS 2018) doit être activement cherché et corrigé, pas supposé absent.
+
+**Suite décidée avec Alexandre** : 5 chantiers d'approfondissement de la partie régression, du plus simple (aucune nouvelle donnée) au plus lourd (nouvelle donnée à intégrer). Fonctions ajoutées dans `scripts/05_tests_robustesse.py` : `reestimer_excluant_annee`, `reestimer_appariement_communal_strict`.
+
+## 39. Chantier 1 — Réestimation en excluant 2020 : coefficients quasi identiques, confirmé
+
+**Objectif** : vérifier que l'exclusion de 2020 du panel (déjà justifiée par l'inversion de signe 2020/2021, section 30) ne fait que recalculer les effets fixes année, sans changer la lecture des autres années.
+
+**Méthode** : `reg_data` filtré pour exclure `annee == 2020` avant de réappliquer `restreindre_panel_equilibre` (donc la complétude du panel équilibré est redéfinie sur les 9 années restantes plutôt que sur 10) — même spécification que la référence (§33) : référence poolée 2012-2014, panel équilibré, sans contrôle logement social.
+
+**Effet de bord attendu et vérifié** : le panel équilibré passe de 3218 à 3238 unités (+20, les unités masquées uniquement en 2020 redeviennent "complètes" sur les 9 années restantes). C'est le seul changement de composition, cohérent avec ce qui était anticipé.
+
+| Année | Pauvreté (avec 2020) | Pauvreté (sans 2020) | Revenu log (avec 2020) | Revenu log (sans 2020) |
+|---|---|---|---|---|
+| 2015 | 0,483*** | 0,486*** | -0,0066*** | -0,0065*** |
+| 2016 | 0,590*** | 0,582*** | -0,0051*** | -0,0050*** |
+| 2017 | 0,270* | 0,265* | -0,0007 n.s. | -0,0007 n.s. |
+| 2018 | 0,843*** | 0,850*** | -0,0044** | -0,0044** |
+| 2019 | 0,284 (p=0,054) | 0,294* (p=0,049) | -0,0003 n.s. | -0,0003 n.s. |
+| 2021 | 0,953*** | 0,963*** | -0,0065** | -0,0065** |
+
+**Conclusion** : confirmé, coefficients quasi identiques (écarts de l'ordre du millième pour le revenu, de quelques centièmes pour la pauvreté). Seule 2019 change de statut, et de façon marginale : passe de non significatif à 5% (p=0,0537) à tout juste significatif (p=0,0492) — un artefact de seuil, pas un changement substantiel (2019 restait de toute façon la moins convaincante des années significatives). L'exclusion de 2020 est donc bien neutre pour la lecture des autres années, comme attendu.
+
+## 40. Chantier 2 — Appariement communal strict (sans repli unité urbaine) : résultat rassurant, signal légèrement plus fort
+
+**Objectif** : vérifier si le repli sur l'unité urbaine (quand aucun IRIS n'existe dans la commune du QPV) dilue, neutralise ou renforce le signal, en comparant au sous-ensemble apparié uniquement en commune stricte.
+
+**Méthode** : filtre `niveau == 'commune'` sur `appariement_qpv_iris_v2.csv`, panel reconstruit sur ce sous-ensemble uniquement, même spécification (référence poolée 2012-2014, panel équilibré).
+
+**Échantillon résultant** : 1066 QPV appariés en communal strict (contre 1246 avec repli, soit 96% de couverture totale — voir section 18), 3059 unités dans le panel équilibré (contre 3218). **Note** : le chiffre de 888 QPV cité dans le brief initial pour "communal strict" correspondait à une version antérieure du pipeline (section 17, avant l'amélioration de la couverture géographique via TAG_QPV_2015 en section 18) — le chiffre à jour est 1066/1296 QPV éligibles (deux QPV en moins que le nombre total avec pauvreté pré-traitement connue, cohérent).
+
+| Année | Pauvreté (complet, avec repli) | Pauvreté (communal strict) | Revenu log (complet) | Revenu log (communal strict) |
+|---|---|---|---|---|
+| 2015 | 0,483*** | 0,592*** | -0,0066*** | -0,0075*** |
+| 2016 | 0,590*** | 0,701*** | -0,0051*** | -0,0062*** |
+| 2017 | 0,270* | 0,402*** | -0,0007 n.s. | -0,0019 n.s. |
+| 2018 | 0,843*** | 0,988*** | -0,0044** | -0,0055*** |
+| 2019 | 0,284 n.s. | 0,481*** | -0,0003 n.s. | -0,0023 n.s. |
+| 2020 | -0,338* | -0,138 n.s. | 0,0056*** | 0,0039* |
+| 2021 | 0,953*** | 1,218*** | -0,0065** | -0,0090*** |
+
+**Conclusion** : le repli sur l'unité urbaine n'est pas source de dilution du signal — c'est même l'inverse. Sur le sous-échantillon communal strict, tous les coefficients de pauvreté sont plus élevés en magnitude et gagnent en significativité (2017 et 2019 passent de marginal/non significatif à significatif à 1%), et 2020 (déjà hors analyse principale) perd sa significativité. Interprétation prudente : soit les appariements de repli (unité urbaine) sont légèrement plus bruités qu'annoncé en section 17 (où leur distance moyenne était pourtant meilleure : 5,6 vs 14,2 points), soit le sous-échantillon communal strict correspond à des QPV en zones plus denses/plus grandes villes où l'effet réel est plus marqué — cette deuxième explication n'est pas testée ici, à garder comme piste pour le volet ML (typologie urbaine). Dans tous les cas, la règle d'appariement à deux niveaux (section 17-18) n'affaiblit pas le résultat principal — au contraire, elle permet de couvrir 180 QPV supplémentaires (1246 vs 1066) sans dégrader le signal, ce qui la conforte comme choix méthodologique pour l'échantillon final.
+
+## 41. Chantier 5 — Balayage systématique des variables démographiques 2010 : exploratoire, à ne pas sur-interpréter
+
+**Donnée utilisée** : `data/processed/demographie_2010_qpv.xls` (feuille "Quartiers", 1292 QPV, 60 variables numériques hors identifiants). Fichier ignoré par git (`*.xls` dans `.gitignore`) — **point de reproductibilité à garder en tête** : si ce fichier n'est pas retéléchargé/reconstruit ailleurs, ce chantier n'est pas rejouable tel quel à partir du seul dépôt Git. À signaler dans le mémoire si cette donnée sert à un résultat cité.
+
+**Déduplication sexe/nationalité** (demandée par le brief) : d'après la feuille "Documentation" du fichier source, les variables suivent une convention `tx_[PREFIXE]_[SUFFIXE]` où PREFIXE ∈ {tot, f, et} (parfois h/fr pour l'indice de jeunesse). Les variables de "premier rang" (calculées sur la population totale du quartier) sont gardées ; celles de "second rang" (calculées sur une sous-population — femmes, étrangers — donc mesurant le même phénomène restreint à un sous-groupe) sont exclues comme redondantes. Résultat : **24 variables non redondantes retenues sur 60** (au lieu des "62" du brief, qui comptaient probablement les colonnes d'identification ou une version légèrement différente du fichier). Exception documentée : `tx_f` (part de femmes dans la population) est gardée malgré son préfixe, car ce n'est pas la déclinaison d'un total déjà présent mais une variable de composition à part entière.
+
+**Méthode** : chaque variable, standardisée (z-score) et interagie avec l'année, est ajoutée à la régression de référence qui contient déjà `traite×année` et `logement_social×année` (celle du résultat final, section 33, mais panel restreint à 9 ans sans 2020 — cf. Chantier 1). Chaque IRIS de contrôle hérite de la valeur de SON QPV apparié (même logique que le test de population, section 36) — ce n'est donc pas une vraie caractéristique de l'IRIS, seulement un indicateur du type de QPV auquel il est rattaché. Référence (baseline, avant ajout d'une variable démographique) :
+
+| Année | Coef. pauvreté (traite×année + logement social×année) | p-value |
+|---|---|---|
+| 2015 | 0,324 | 0,0003 |
+| 2016 | 0,393 | 0,0008 |
+| 2017 | 0,152 | 0,24 n.s. |
+| 2018 | 0,665 | 0,0001 |
+| 2019 | 0,142 | 0,40 n.s. |
+| 2021 | 0,706 | 0,0005 |
+
+(Cohérent avec la liste du brief — années significatives : 2015, 2016, 2018, 2021.)
+
+**Tableau des variables les plus "explicatives"** (réduction moyenne en % du coefficient traite×année sur les 4 années significatives, script `scripts/06_balayage_demographie.py`, sortie complète dans `data/processed/balayage_demographie_2010.csv`) :
+
+| Rang | Variable | Réduction moyenne | Interactions var×année significatives (/6) | % QPV manquants |
+|---|---|---|---|---|
+| 1 | `tx_tot_men1` (part de ménages d'une personne) | 5,7% | 5/6 | 0,7% |
+| 2 | `tx_f` (part de femmes) | 4,6% | 6/6 | 0,02% |
+| 3 | `l_nbpers` (nb moyen de personnes par logement) | 4,3% | 5/6 | 0,3% |
+| 4 | `tx_tot_men6` (part de ménages nombreux) | 3,4% | 2/6 | 49,1% (!) |
+| 5 | `tx_tot_et` (part d'étrangers) | 3,0% | 1/6 | 8,5% |
+| 6 | `tx_tot_diplbac2` (part diplômés Bac+2 ou +) | 2,4% | 1/6 | 8,9% |
+| ... | (18 autres variables, réduction 0,1% à 2,3%) | | | |
+| dernier | `tx_tot_fam_mono` (part familles monoparentales) | **-3,6%** | 5/6 | 4,7% |
+| avant-dernier | `tx_l_vacant` (part logements vacants) | **-2,6%** | 2/6 | 48,2% |
+
+**Lecture, avec prudence** :
+- `tx_tot_men1` et `l_nbpers` (taille des ménages/logements) et `tx_f` (part de femmes) sont les variables qui absorbent le plus de signal — cohérent avec une lecture "composition démographique du ménage" déjà entrevue via le test de mobilité résidentielle (section 36). `tx_f` a la significativité la plus nette (6/6 années) et quasiment aucune valeur manquante — c'est la variable la plus fiable de tout le balayage, à privilégier si une seule doit être retenue pour un futur contrôle.
+- **Deux variables (`tx_tot_fam_mono`, `tx_l_vacant`) vont dans le sens INVERSE** : les ajouter fait grossir le coefficient traite×année plutôt que le réduire. Résultat contre-intuitif à ne pas sur-interpréter sans creuser davantage — pourrait signaler une confusion plus complexe (ex. composition changeante dans le temps) plutôt qu'un simple effet additif.
+- **`tx_tot_men6` et `tx_l_vacant` ont un taux de valeurs manquantes proche de 50%** (secret statistique) — leur classement est fragile, à ne pas citer comme un résultat solide sans vérifier la sensibilité au traitement des manquants (ici, remplacées par 0 après standardisation, càd traitées comme "dans la moyenne" — choix conservateur mais qui mérite d'être signalé si ces variables sont citées).
+
+**Avertissement à conserver dans le mémoire (déjà anticipé par le brief)** : 24 variables testées une par une sur la même régression, sans correction pour tests multiples (type Bonferroni). Le classement ci-dessus est **exploratoire, pas confirmatoire** — sert à orienter une hypothèse à tester plus rigoureusement (ex. dans le volet ML, ou en resserrant une hypothèse spécifique comme cela a été fait pour le logement social et la population), pas à affirmer que `tx_tot_men1` "explique" causalement une partie de l'effet QPV.
+
+## 42. Chantier 3 — Logement social en proportion : résultat non concluant, révèle un problème de fond plutôt qu'une réponse propre
+
+**Recherche de données préalable** : vérifié en direct sur `insee.fr/fr/statistiques/8647012` — aucune version QPV/quartiers du produit IRIS "Logement" n'existe (page confirmée : IRIS uniquement). Recherche d'une population QPV plus récente que 2018 (pour servir de dénominateur de repli cohérent avec le RPLS/logement 2022) également négative : le fichier "Estimations démographiques 2022 QPV2015" (`sig.ville.gouv.fr`, insee.fr/fr/statistiques/8742564) ne contient que des **parts en pourcentage**, aucune population en valeur absolue (vérifié en ouvrant le fichier, pas déduit du descriptif de la page — la synthèse automatique de la page avait annoncé à tort qu'il contenait la population totale). Et la page dédiée à la population confirme que la géographie QPV2015 s'arrête à 2018 ; au-delà, l'INSEE ne propose que la géographie QPV2024 (zonage différent, incompatible avec le design du mémoire). **Décision prise avec Alexandre** : utiliser la population QPV 2018 comme dénominateur de repli, en l'assumant comme approximation documentée plutôt que de partir sur une reconstruction lourde (table de passage QPV2024→QPV2015, écartée).
+
+**Construction** : `logement_social_proportion` = nbLsPls (RPLS 2022) / total logements 2022 (`P22_LOG`, source `IRIS - Logement - 2022`, vérifié : nom de variable exactement conforme à ce qu'anticipait le brief) côté IRIS ; nbLsPls / population QPV 2018 côté QPV. Script : `scripts/07_logement_social_proportion.py`.
+
+**Incident technique noté** : le module Python `zipfile` lève une erreur CRC-32 sur l'archive `IRIS - Logement - 2022.zip` alors que `unzip` en ligne de commande la lit sans aucune erreur (`unzip -t` confirme "No errors detected"). Contournement : extraction via `subprocess` + `unzip` plutôt que `zipfile`. Cause non investiguée plus avant (pas bloquant une fois le contournement identifié), mais à garder en tête si d'autres archives INSEE posent le même problème.
+
+**Résultat (taux de pauvreté, panel équilibré, référence poolée 2012-2014)** :
+
+| Année | Sans contrôle | Contrôle absolu (nbLsPls, réf. section 33) | Contrôle proportion "mixte" (logements IRIS / pop. QPV) | Contrôle proportion "homogène" (pop. des deux côtés, diagnostic) |
+|---|---|---|---|---|
+| 2015 | 0,483*** | 0,320*** | 0,572*** | -0,084 n.s. |
+| 2016 | 0,590*** | 0,403*** | 0,698*** | -0,150 n.s. |
+| 2017 | 0,270* | 0,159 n.s. | 0,356** | -0,424** |
+| 2018 | 0,843*** | 0,659*** | 0,996*** | -0,363* |
+| 2019 | 0,284 n.s. | 0,132 n.s. | 0,404** | -0,721*** |
+| 2020 | -0,338* | -0,412* | -0,264 n.s. | -1,105*** |
+| 2021 | 0,953*** | 0,697*** | 1,170*** | -0,756*** |
+
+**Ce que ça révèle, avec le recul nécessaire** : la version "proportion mixte" (celle demandée dans le brief) n'absorbe PAS plus de signal que le contrôle absolu — elle en absorbe MOINS, et fait même remonter les coefficients au-dessus du niveau sans aucun contrôle. En creusant pourquoi (moyennes par groupe : `prop_mixte_z` = 0,118 en QPV contre 0,199 en IRIS de contrôle), on découvre que le contrôle "mixte" fait apparaître les QPV comme ayant proportionnellement MOINS de logement social que leurs contrôles — l'inverse de ce qu'on sait être vrai (section 24). Un contrôle de cohérence (même dénominateur — population 2018 — des deux côtés) confirme le diagnostic : avec un dénominateur homogène, les QPV ressortent bien nettement au-dessus (moyenne 0,717 contre -0,332), dans le sens attendu, et ce contrôle absorbe cette fois énormément de signal (les coefficients traité×année deviennent négatifs).
+
+**Conclusion à retenir pour le mémoire** : ce chantier ne débouche pas sur un contrôle en proportion utilisable. Le problème n'est pas la proportion en tant que telle, mais le fait que le numérateur (logements sociaux) est rapporté à deux concepts différents selon le groupe — logements côté IRIS, population côté QPV — ce qui rend les deux proportions non comparables et inverse artificiellement le classement QPV/contrôle. Ce n'est pas un problème qu'on peut corriger avec les données actuellement disponibles (aucune population QPV récente, aucun total-logements QPV n'existe). **Le contrôle en nombre absolu (section 25/33) reste donc la version à conserver comme référence du mémoire** — ce chantier confirme, a contrario, que la donnée manquante (total logements ou population comparable côté QPV) est une vraie limite de données à documenter explicitement, pas un simple raffinement optionnel resté de côté. Le résultat "homogène" (diagnostic) n'est lui-même pas utilisable tel quel comme contrôle final : l'écart de moyenne entre groupes est si large (près d'un écart-type) qu'ajouter cette interaction revient probablement à sur-contrôler (la population du quartier est elle-même liée au mécanisme de sélection QPV, cf. limite de mobilité résidentielle section 27/36) plutôt qu'à isoler un facteur de confusion propre.

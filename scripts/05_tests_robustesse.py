@@ -5,6 +5,8 @@ Tests de robustesse de la régression event-study :
 2. Sous-échantillon à appariement serré (distance de pauvreté pré-traitement <= seuil)
 3. Hétérogénéité selon l'évolution de population du QPV (test de l'hypothèse
    "fuite des ménages qui s'enrichissent" / mobilité résidentielle)
+4. Réestimation en excluant 2020 (Chantier 1, brief limites/robustesse)
+5. Réestimation sur appariement communal strict, sans repli unité urbaine (Chantier 2)
 """
 import pandas as pd
 import numpy as np
@@ -81,6 +83,45 @@ def test_heterogeneite_evolution_population(reg_data, appariement_df, qpv_evolut
     return resultats, mediane
 
 
+def reestimer_excluant_annee(reg_data, annee_exclue, outcomes=('log_revenu', 'taux_pauvrete')):
+    """Retire une année du panel long AVANT de restreindre au panel équilibré
+    (la complétude du panel équilibré est donc redéfinie sur les années
+    restantes), puis réestime l'event-study avec la même spécification
+    (référence poolée 2012-2014). Sert à vérifier qu'exclure une année ne
+    fait que recalculer les effets fixes année, sans changer le reste."""
+    sans_annee = reg_data[reg_data['annee'] != annee_exclue].copy()
+    sans_annee_eq = reg_mod.restreindre_panel_equilibre(sans_annee)
+    resultats = {}
+    for outcome in outcomes:
+        res, _ = reg_mod.estimer_event_study(sans_annee_eq, outcome, reference='pooled')
+        resultats[outcome] = res
+    n_unites = sans_annee_eq['unit_id'].nunique()
+    return resultats, n_unites
+
+
+def reestimer_appariement_communal_strict(chemin_appariement, chemin_panel_qpv, chemin_panel_iris,
+                                            chemin_qpv_info, outcomes=('log_revenu', 'taux_pauvrete')):
+    """Ne garde que les paires d'appariement de niveau 'commune' (exclut le
+    repli sur l'unité urbaine), reconstruit le panel et réestime avec la même
+    spécification (référence poolée 2012-2014, panel équilibré)."""
+    app = pd.read_csv(chemin_appariement)
+    app_commune = app[app['niveau'] == 'commune'].copy()
+    chemin_tmp = '/tmp/claude-1000/-workspaces-M-moire-DU-SDA/e7e7888b-2926-4580-91e3-fb8cdab5ccae/scratchpad/appariement_commune_strict.csv'
+    app_commune.to_csv(chemin_tmp, index=False)
+
+    reg_data = reg_mod.construire_panel_regression(
+        chemin_tmp, chemin_panel_qpv, chemin_panel_iris, chemin_qpv_info)
+    reg_data_eq = reg_mod.restreindre_panel_equilibre(reg_data)
+
+    resultats = {}
+    for outcome in outcomes:
+        res, _ = reg_mod.estimer_event_study(reg_data_eq, outcome, reference='pooled')
+        resultats[outcome] = res
+    n_qpv = app_commune['code_qpv'].nunique()
+    n_unites = reg_data_eq['unit_id'].nunique()
+    return resultats, n_qpv, n_unites
+
+
 if __name__ == '__main__':
     reg_data = reg_mod.construire_panel_regression(
         'data/processed/appariement_qpv_iris_v2.csv',
@@ -101,4 +142,25 @@ if __name__ == '__main__':
     print(f"Médiane évolution population QPV : {mediane:.2f}%")
     for groupe, res in resultats.items():
         print(f"\n--- {groupe} ---")
+        print(res.round(4))
+
+    print("\n=== Chantier 1 : réestimation en excluant 2020 ===")
+    resultats_sans_2020, n_unites_sans_2020 = reestimer_excluant_annee(reg_data, 2020)
+    print(f"Unités dans le panel équilibré (sans 2020) : {n_unites_sans_2020} "
+          f"(contre {reg_data_eq['unit_id'].nunique()} avec 2020)")
+    for outcome, res in resultats_sans_2020.items():
+        print(f"\n--- {outcome} ---")
+        print(res.round(4))
+
+    print("\n=== Chantier 2 : appariement communal strict (sans repli unité urbaine) ===")
+    resultats_communal, n_qpv_communal, n_unites_communal = reestimer_appariement_communal_strict(
+        'data/processed/appariement_qpv_iris_v2.csv',
+        'data/processed/panel_qpv_complet_v2.csv',
+        'data/processed/panel_iris_complet_v2.csv',
+        'data/processed/qpv_info_nom_commune.csv',
+    )
+    print(f"QPV appariés en communal strict : {n_qpv_communal} ; "
+          f"unités dans le panel équilibré : {n_unites_communal}")
+    for outcome, res in resultats_communal.items():
+        print(f"\n--- {outcome} ---")
         print(res.round(4))
